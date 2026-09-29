@@ -9,7 +9,7 @@ handle: "how-to-potty-train-a-puppy-in-30-days"
 
 Potty training is usually the first big project for a new puppy owner, and it can feel endless when you're mopping up your third accident before lunch. The good news: most puppies learn the basics quickly when you give them a consistent routine, lots of chances to get it right, and a reward every time they do.
 
-This guide walks you through exactly how to potty train a puppy over 30 days. Every puppy is different, and some will need more time (especially very young puppies or small breeds with tiny bladders), but a month is a realistic window to build solid habits.
+This guide walks you through how to potty train a puppy over 30 days. Some puppies need more time (especially very young puppies or small breeds), but a month is a realistic window to build solid habits.
 
 ## Why potty training works (and why it sometimes doesn't)
 
@@ -102,8 +102,7 @@ They will happen. Here's how to handle them calmly:
 - **Giving freedom too soon.** A puppy with the run of the house has many chances to practice going indoors.
 - **Rewarding too late.** A treat given back inside rewards coming inside, not going potty.
 - **Inconsistent schedules.** Irregular meals and random potty times make patterns hard to learn.
-- **Using the crate too long.** Crates are helpful, but a puppy left too long will be forced to go, which can undo their natural instinct to keep their space clean.
-- **Expecting a young puppy to "tell" you.** Signaling comes with time. Early on, it's your job to anticipate.
+- **Using the crate too long.** A puppy left too long will be forced to go, which can undo their instinct to keep their space clean.
 
 ## When to call your vet
 
