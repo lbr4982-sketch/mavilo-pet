@@ -1,0 +1,15 @@
+<section class="section-spacing">
+  <div class="page-width">
+    <div class="section-header"><p class="eyebrow">Search</p><h1>{{ 'general.search.title' | t }}</h1></div>
+    <form class="search-form" action="{{ routes.search_url }}" method="get" role="search">
+      <input type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'general.search.placeholder' | t }}">
+      <button class="button" type="submit">{{ 'general.search.submit' | t }}</button>
+    </form>
+    {%- if search.performed -%}
+      <div class="section-spacing"><div class="card-grid">
+        {%- for item in search.results -%}{%- if item.object_type == 'product' -%}{% render 'product-card', product: item %}{%- else -%}<article class="article-card"><div class="article-card__content"><h3><a href="{{ item.url }}">{{ item.title }}</a></h3><p class="muted">{{ item.content | strip_html | truncate: 120 }}</p></div></article>{%- endif -%}{%- else -%}<div class="empty-state">No results found.</div>{%- endfor -%}
+      </div></div>
+    {%- endif -%}
+  </div>
+</section>
+{% schema %}{ "name": "Main search" }{% endschema %}

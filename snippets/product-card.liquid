@@ -1,0 +1,23 @@
+<article class="product-card">
+  <a class="product-card__media" href="{{ product.url }}" aria-label="{{ product.title | escape }}">
+    {%- if product.featured_image -%}
+      {{ product.featured_image | image_url: width: 700 | image_tag: loading: 'lazy', widths: '300, 500, 700', alt: product.featured_image.alt | default: product.title }}
+    {%- else -%}
+      {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+    {%- endif -%}
+  </a>
+  <div class="product-card__content">
+    {%- if product.compare_at_price > product.price -%}<span class="badge">Sale</span>{%- endif -%}
+    <h3><a href="{{ product.url }}">{{ product.title }}</a></h3>
+    {% render 'price', product: product %}
+    {%- if product.available -%}
+      <form method="post" action="{{ routes.cart_add_url }}" data-product-form>
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+        <input type="hidden" name="quantity" value="1">
+        <button class="button button--full" type="submit">{{ 'products.product.add_to_cart' | t }}</button>
+      </form>
+    {%- else -%}
+      <button class="button button--full" disabled>{{ 'products.product.sold_out' | t }}</button>
+    {%- endif -%}
+  </div>
+</article>

@@ -1,0 +1,16 @@
+<section class="section-spacing">
+  <div class="page-width">
+    <div class="section-header"><p class="eyebrow">{{ section.settings.eyebrow }}</p><h2>{{ section.settings.heading }}</h2></div>
+    <div class="card-grid">
+      {%- for block in section.blocks -%}<blockquote class="review-card" {{ block.shopify_attributes }}><p>“{{ block.settings.quote }}”</p><strong>{{ block.settings.author }}</strong><p class="muted">{{ block.settings.pet }}</p></blockquote>{%- endfor -%}
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Testimonials",
+  "settings": [{ "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Pet parent notes" }, { "type": "text", "id": "heading", "label": "Heading", "default": "Made for real-life pet homes" }],
+  "blocks": [{ "type": "testimonial", "name": "Testimonial", "settings": [{ "type": "textarea", "id": "quote", "label": "Quote", "default": "Exactly the kind of practical pet product I keep reaching for every week." }, { "type": "text", "id": "author", "label": "Author", "default": "Mavilo customer" }, { "type": "text", "id": "pet", "label": "Pet", "default": "Dog parent" }] }],
+  "presets": [{ "name": "Testimonials", "blocks": [{"type":"testimonial"}, {"type":"testimonial","settings":{"quote":"The travel accessories make weekend trips with our pup much easier.","author":"Sarah","pet":"Golden retriever parent"}}, {"type":"testimonial","settings":{"quote":"Simple, useful, and focused on the messy parts of pet life.","author":"Marcus","pet":"Cat and dog parent"}}, {"type":"testimonial","settings":{"quote":"I like that the products are practical instead of gimmicky.","author":"Emily","pet":"Rescue dog parent"}}] }]
+}
+{% endschema %}

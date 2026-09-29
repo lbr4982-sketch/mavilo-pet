@@ -1,0 +1,44 @@
+<section class="section-spacing">
+  <div class="page-width richtext">
+    <div class="section-header">
+      <p class="eyebrow">{{ section.settings.eyebrow }}</p>
+      <h1>{{ section.settings.heading }}</h1>
+      <p class="muted">{{ section.settings.text }}</p>
+    </div>
+    {%- for block in section.blocks -%}
+      <details class="value-card" style="margin-bottom:1rem" {% if forloop.first %}open{% endif %} {{ block.shopify_attributes }}>
+        <summary><strong>{{ block.settings.question }}</strong></summary>
+        <div class="muted" style="margin-top:.75rem">{{ block.settings.answer }}</div>
+      </details>
+    {%- endfor -%}
+    {%- if page.content != blank -%}
+      <div class="section-spacing">{{ page.content }}</div>
+    {%- endif -%}
+  </div>
+</section>
+{% schema %}
+{
+  "name": "FAQ page",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Help center" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Frequently asked questions" },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "Answers about ordering, shipping, returns, and choosing practical pet products from Mavilo Pet Co." }
+  ],
+  "blocks": [
+    { "type": "question", "name": "Question", "settings": [
+      { "type": "text", "id": "question", "label": "Question", "default": "Where does Mavilo Pet Co. ship?" },
+      { "type": "richtext", "id": "answer", "label": "Answer", "default": "<p>Our store is focused on customers in the United States. Shipping options and delivery timelines may vary by product and destination.</p>" }
+    ] }
+  ],
+  "presets": [
+    { "name": "FAQ page", "blocks": [
+      { "type": "question", "settings": { "question": "Where does Mavilo Pet Co. ship?", "answer": "<p>Our store is focused on customers in the United States. Shipping options and delivery timelines may vary by product and destination.</p>" } },
+      { "type": "question", "settings": { "question": "How do I choose the right product for my pet?", "answer": "<p>Start with the routine you want to improve: cleaning, grooming, comfort, walking, or travel. Review the product description, photos, sizing details, and intended use before ordering.</p>" } },
+      { "type": "question", "settings": { "question": "Can I track my order?", "answer": "<p>Yes. Once your order ships, tracking details will be sent to the email address used at checkout when available.</p>" } },
+      { "type": "question", "settings": { "question": "What if I entered the wrong shipping address?", "answer": "<p>Contact us as soon as possible with your order number. If the order has not been processed yet, we will do our best to help update it.</p>" } },
+      { "type": "question", "settings": { "question": "What is your return policy?", "answer": "<p>Please review our return policy before ordering. If you need help with an order, contact support with your order number and photos if relevant.</p>" } },
+      { "type": "question", "settings": { "question": "Are these products for dogs, cats, or both?", "answer": "<p>Product suitability varies. Each product page should explain whether the item is best for dogs, cats, or general pet households.</p>" } }
+    ] }
+  ]
+}
+{% endschema %}

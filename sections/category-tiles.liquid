@@ -1,0 +1,29 @@
+<section class="section-spacing">
+  <div class="page-width">
+    <div class="section-header"><p class="eyebrow">{{ section.settings.eyebrow }}</p><h2>{{ section.settings.heading }}</h2></div>
+    <div class="card-grid">
+      {%- for block in section.blocks -%}
+        <a class="category-card" href="{{ block.settings.link }}" {{ block.shopify_attributes }}>
+          <div class="category-card__image">{%- if block.settings.image -%}{{ block.settings.image | image_url: width: 700 | image_tag: loading: 'lazy', alt: block.settings.title }}{%- else -%}{%- assign col_handle = block.settings.link | split: '/collections/' | last -%}{%- assign col = collections[col_handle] -%}{%- if col.products.first.featured_image -%}{{ col.products.first.featured_image | image_url: width: 700 | image_tag: loading: 'lazy', alt: block.settings.title }}{%- else -%}{{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg' }}{%- endif -%}{%- endif -%}</div>
+          <div class="category-card__content"><h3>{{ block.settings.title }}</h3><p class="muted">{{ block.settings.text }}</p></div>
+        </a>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Category tiles",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Shop solutions" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Find products by everyday routine" }
+  ],
+  "blocks": [{ "type": "tile", "name": "Tile", "settings": [
+    { "type": "text", "id": "title", "label": "Title", "default": "Cleaning" },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "Tools for tidier homes and cleaner paws." },
+    { "type": "url", "id": "link", "label": "Link", "default": "/collections/all" },
+    { "type": "image_picker", "id": "image", "label": "Image" }
+  ]}],
+  "presets": [{ "name": "Category tiles", "blocks": [{"type":"tile","settings":{"title":"Cleaning","text":"Paw cleaners, lint tools, and home helpers."}}, {"type":"tile","settings":{"title":"Grooming","text":"Brushes, bath tools, and coat care."}}, {"type":"tile","settings":{"title":"Walking","text":"Leashes, harness helpers, and outdoor essentials."}}, {"type":"tile","settings":{"title":"Travel","text":"Portable comfort for cars and trips."}}] }]
+}
+{% endschema %}

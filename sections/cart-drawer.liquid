@@ -1,0 +1,53 @@
+<div data-cart-section>
+  <h2>{{ 'cart.general.title' | t }}</h2>
+  {%- if cart.item_count == 0 -%}
+    <div class="empty-state"><p>{{ 'cart.general.empty' | t }}</p><a class="button" href="{{ routes.all_products_collection_url }}">Shop pet essentials</a></div>
+  {%- else -%}
+    {%- assign threshold = section.settings.free_shipping_threshold | times: 100 -%}
+    {%- if threshold > 0 -%}
+      <div class="shipping-bar">
+        {%- if cart.total_price >= threshold -%}
+          <p class="shipping-bar__label">🎉 You've unlocked free U.S. shipping!</p>
+        {%- else -%}
+          {%- assign remaining = threshold | minus: cart.total_price -%}
+          <p class="shipping-bar__label">You're {{ remaining | money }} away from free U.S. shipping</p>
+        {%- endif -%}
+        {%- assign progress = cart.total_price | times: 100 | divided_by: threshold | at_most: 100 -%}
+        <div class="shipping-bar__track"><div class="shipping-bar__fill" style="width:{{ progress }}%"></div></div>
+      </div>
+    {%- endif -%}
+    <form action="{{ routes.cart_url }}" method="post">
+      {%- for item in cart.items -%}
+        <div class="cart-item">
+          <a class="cart-item__media" href="{{ item.url }}">
+            {%- if item.image -%}{{ item.image | image_url: width: 160 | image_tag: loading: 'lazy', alt: item.product.title }}{%- endif -%}
+          </a>
+          <div class="cart-item__details">
+            <strong>{{ item.product.title }}</strong>
+            {%- unless item.product.has_only_default_variant -%}<p class="muted">{{ item.variant.title }}</p>{%- endunless -%}
+            <p class="price">{{ item.final_line_price | money }}</p>
+            <div class="quantity" data-quantity>
+              <button type="button" data-cart-quantity="minus" data-line="{{ forloop.index }}" aria-label="Decrease quantity">&minus;</button>
+              <input type="number" name="updates[]" value="{{ item.quantity }}" min="0" data-cart-line-input data-line="{{ forloop.index }}" aria-label="{{ 'products.product.quantity' | t }}">
+              <button type="button" data-cart-quantity="plus" data-line="{{ forloop.index }}" aria-label="Increase quantity">+</button>
+            </div>
+          </div>
+          <a class="cart-item__remove" href="{{ item.url_to_remove }}" data-cart-remove data-line="{{ forloop.index }}" aria-label="{{ 'cart.general.remove' | t }}">&times;</a>
+        </div>
+      {%- endfor -%}
+      <div class="cart-summary">
+        <p class="cart-summary__row"><span>{{ 'cart.general.subtotal' | t }}</span><strong>{{ cart.total_price | money }}</strong></p>
+        <p class="muted" style="font-size:.85rem">Shipping and taxes calculated at checkout.</p>
+        <button class="button button--full" name="checkout" type="submit">{{ 'cart.general.checkout' | t }}</button>
+      </div>
+    </form>
+  {%- endif -%}
+</div>
+{% schema %}
+{
+  "name": "Cart drawer",
+  "settings": [
+    { "type": "number", "id": "free_shipping_threshold", "label": "Free shipping threshold (USD)", "default": 50 }
+  ]
+}
+{% endschema %}

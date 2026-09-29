@@ -1,0 +1,33 @@
+<section class="section-spacing">
+  <div class="page-width product-page">
+    <div class="hero__image">
+      {%- if section.settings.image -%}
+        {{ section.settings.image | image_url: width: 1000 | image_tag: loading: 'lazy', widths: '500, 800, 1000', alt: section.settings.heading }}
+      {%- else -%}
+        <div class="hero__placeholder">🐶</div>
+      {%- endif -%}
+    </div>
+    <div>
+      <p class="eyebrow">{{ section.settings.eyebrow }}</p>
+      <h2>{{ section.settings.heading }}</h2>
+      <div class="richtext">{{ section.settings.text }}</div>
+      <div class="hero__actions">
+        <a class="button" href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Brand story",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Our promise" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Less mess, easier routines, happier pets." },
+    { "type": "richtext", "id": "text", "label": "Text", "default": "<p>Mavilo Pet Co. curates practical pet accessories for the real parts of pet life: muddy paws, loose fur, daily walks, bath days, anxious travel, and cozy rest.</p><p>Our focus is simple: useful products that help pet parents keep routines cleaner, calmer, and easier.</p>" },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "Shop practical picks" },
+    { "type": "url", "id": "button_link", "label": "Button link", "default": "/collections/all" },
+    { "type": "image_picker", "id": "image", "label": "Image" }
+  ],
+  "presets": [{ "name": "Brand story" }]
+}
+{% endschema %}

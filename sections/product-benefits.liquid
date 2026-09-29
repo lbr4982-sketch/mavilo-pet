@@ -1,0 +1,41 @@
+<section class="section-spacing">
+  <div class="page-width">
+    <div class="section-header">
+      <p class="eyebrow">{{ section.settings.eyebrow }}</p>
+      <h2>{{ section.settings.heading }}</h2>
+    </div>
+    <div class="card-grid">
+      {%- for block in section.blocks -%}
+        <div class="value-card" {{ block.shopify_attributes }}>
+          <p class="eyebrow">{{ block.settings.icon }}</p>
+          <h3>{{ block.settings.title }}</h3>
+          <p class="muted">{{ block.settings.text }}</p>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Product benefits",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Why it belongs in your routine" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Practical details pet parents care about" }
+  ],
+  "blocks": [
+    { "type": "benefit", "name": "Benefit", "settings": [
+      { "type": "text", "id": "icon", "label": "Icon", "default": "🧼" },
+      { "type": "text", "id": "title", "label": "Title", "default": "Easy-care design" },
+      { "type": "textarea", "id": "text", "label": "Text", "default": "Selected for everyday pet households and repeat use." }
+    ] }
+  ],
+  "presets": [
+    { "name": "Product benefits", "blocks": [
+      { "type": "benefit", "settings": { "icon": "🧼", "title": "Easy-care design", "text": "Selected for everyday pet households and repeat use." } },
+      { "type": "benefit", "settings": { "icon": "🐾", "title": "Routine friendly", "text": "Fits into cleaning, grooming, walking, comfort, or travel habits." } },
+      { "type": "benefit", "settings": { "icon": "📦", "title": "Simple ordering", "text": "A straightforward Shopify checkout experience for U.S. customers." } },
+      { "type": "benefit", "settings": { "icon": "💚", "title": "Pet parent focused", "text": "Chosen for usefulness first, not gimmicks." } }
+    ] }
+  ]
+}
+{% endschema %}

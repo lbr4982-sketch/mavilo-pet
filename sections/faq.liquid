@@ -1,0 +1,39 @@
+<section class="section-spacing">
+  <div class="page-width richtext">
+    <div class="section-header">
+      <p class="eyebrow">{{ section.settings.eyebrow }}</p>
+      <h2>{{ section.settings.heading }}</h2>
+      <p class="muted">{{ section.settings.text }}</p>
+    </div>
+    {%- for block in section.blocks -%}
+      <details class="value-card" style="margin-bottom:1rem" {{ block.shopify_attributes }}>
+        <summary><strong>{{ block.settings.question }}</strong></summary>
+        <div class="muted" style="margin-top:.75rem">{{ block.settings.answer }}</div>
+      </details>
+    {%- endfor -%}
+  </div>
+</section>
+{% schema %}
+{
+  "name": "FAQ",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Questions" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Helpful answers before you order" },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "Use this section to explain shipping, returns, sizing, and product care for pet parents." }
+  ],
+  "blocks": [
+    { "type": "question", "name": "Question", "settings": [
+      { "type": "text", "id": "question", "label": "Question", "default": "Where do you ship?" },
+      { "type": "richtext", "id": "answer", "label": "Answer", "default": "<p>We focus on serving customers in the United States. Shipping times and availability may vary by product.</p>" }
+    ] }
+  ],
+  "presets": [
+    { "name": "FAQ", "blocks": [
+      { "type": "question", "settings": { "question": "Where do you ship?", "answer": "<p>We focus on serving customers in the United States. Shipping times and availability may vary by product.</p>" } },
+      { "type": "question", "settings": { "question": "How do I choose the right product?", "answer": "<p>Start with the routine you want to improve: cleaning, grooming, comfort, walking, or travel. Product pages should include details to help you decide.</p>" } },
+      { "type": "question", "settings": { "question": "Can I track my order?", "answer": "<p>Once your order ships, use your confirmation email or tracking page to follow delivery updates.</p>" } },
+      { "type": "question", "settings": { "question": "What if my item does not work for my pet?", "answer": "<p>Review the return policy before ordering, and contact support with your order number if you need help.</p>" } }
+    ] }
+  ]
+}
+{% endschema %}

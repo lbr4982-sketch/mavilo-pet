@@ -1,0 +1,30 @@
+<section class="section-spacing">
+  <div class="page-width">
+    <div class="collection-toolbar">
+      <div><p class="eyebrow">Collection</p><h1>{{ collection.title }}</h1>{% if collection.description != blank %}<div class="muted">{{ collection.description }}</div>{% endif %}</div>
+      <form method="get"><select name="sort_by" onchange="this.form.submit()">{%- for option in collection.sort_options -%}<option value="{{ option.value }}" {% if option.value == collection.sort_by %}selected{% endif %}>{{ option.name }}</option>{%- endfor -%}</select></form>
+    </div>
+    <div class="collection-grid">
+      <aside class="filters">
+        <h3>Filter</h3>
+        {%- for filter in collection.filters -%}
+          <details><summary>{{ filter.label }}</summary>
+            {%- for value in filter.values -%}
+              <label><input type="checkbox" name="{{ value.param_name }}" value="{{ value.value }}" {% if value.active %}checked{% endif %} form="FacetFilters"> {{ value.label }} ({{ value.count }})</label><br>
+            {%- endfor -%}
+          </details>
+        {%- endfor -%}
+        <form id="FacetFilters" method="get"><button class="button button--full" type="submit">Apply filters</button></form>
+      </aside>
+      <div>
+        {%- paginate collection.products by section.settings.products_per_page -%}
+          <div class="card-grid">
+            {%- for product in collection.products -%}{% render 'product-card', product: product %}{%- else -%}<div class="empty-state">No products found.</div>{%- endfor -%}
+          </div>
+          {%- if paginate.pages > 1 -%}<nav class="pagination">{{ paginate | default_pagination }}</nav>{%- endif -%}
+        {%- endpaginate -%}
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}{ "name": "Main collection", "settings": [{ "type": "range", "id": "products_per_page", "min": 8, "max": 48, "step": 4, "label": "Products per page", "default": 16 }] }{% endschema %}

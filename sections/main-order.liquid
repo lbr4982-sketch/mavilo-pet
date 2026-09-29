@@ -1,0 +1,16 @@
+<section class="section-spacing">
+  <div class="page-width">
+    <p><a href="{{ routes.account_url }}">← Back to account</a></p>
+    <h1>Order {{ order.name }}</h1>
+    <p class="muted">Placed {{ order.created_at | date: '%B %d, %Y' }}</p>
+    {%- for line_item in order.line_items -%}
+      <div class="cart-item">
+        {%- if line_item.image -%}{{ line_item.image | image_url: width: 160 | image_tag: loading: 'lazy', alt: line_item.title }}{%- endif -%}
+        <div><strong>{{ line_item.title }}</strong><p class="muted">Qty {{ line_item.quantity }}</p></div>
+        <strong>{{ line_item.final_line_price | money }}</strong>
+      </div>
+    {%- endfor -%}
+    <h2>Total: {{ order.total_price | money }}</h2>
+  </div>
+</section>
+{% schema %}{ "name": "Main order" }{% endschema %}

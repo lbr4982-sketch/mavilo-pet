@@ -1,0 +1,5 @@
+<div class="quantity" data-quantity>
+  <button type="button" data-quantity-button="minus" aria-label="Decrease quantity">&minus;</button>
+  <input type="number" name="quantity" value="{{ value | default: 1 }}" min="1" aria-label="{{ 'products.product.quantity' | t }}">
+  <button type="button" data-quantity-button="plus" aria-label="Increase quantity">+</button>
+</div>

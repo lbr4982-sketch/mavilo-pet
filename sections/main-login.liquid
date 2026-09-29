@@ -1,0 +1,13 @@
+<section class="section-spacing">
+  <div class="page-width richtext">
+    <h1>Account login</h1>
+    {%- form 'customer_login', class: 'product-form' -%}
+      {{ form.errors | default_errors }}
+      <div class="field"><input type="email" name="customer[email]" autocomplete="email" placeholder="Email" required></div>
+      <div class="field"><input type="password" name="customer[password]" autocomplete="current-password" placeholder="Password" required></div>
+      <button class="button" type="submit">Sign in</button>
+      <a class="button button--outline" href="{{ routes.account_register_url }}">Create account</a>
+    {%- endform -%}
+  </div>
+</section>
+{% schema %}{ "name": "Main login" }{% endschema %}

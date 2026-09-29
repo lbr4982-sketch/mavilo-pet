@@ -1,0 +1,48 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Mavilo Pet Co.",
+    "theme_version": "1.0.0",
+    "theme_author": "Mavilo Pet Co.",
+    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
+    "theme_support_url": "https://help.shopify.com/"
+  },
+  {
+    "name": "Brand",
+    "settings": [
+      { "type": "image_picker", "id": "logo", "label": "Logo" },
+      { "type": "image_picker", "id": "favicon", "label": "Favicon" },
+      { "type": "text", "id": "announcement", "label": "Announcement text", "default": "Free U.S. shipping on orders over $50" }
+    ]
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      { "type": "color", "id": "color_primary", "label": "Primary", "default": "#2f6f5e" },
+      { "type": "color", "id": "color_secondary", "label": "Secondary", "default": "#f2a65a" },
+      { "type": "color", "id": "color_accent", "label": "Accent", "default": "#7aa7c7" },
+      { "type": "color", "id": "color_background", "label": "Background", "default": "#fffaf3" },
+      { "type": "color", "id": "color_text", "label": "Text", "default": "#22312c" }
+    ]
+  },
+  {
+    "name": "Typography",
+    "settings": [
+      { "type": "font_picker", "id": "font_heading", "label": "Heading font", "default": "assistant_n7" },
+      { "type": "font_picker", "id": "font_body", "label": "Body font", "default": "assistant_n4" }
+    ]
+  },
+  {
+    "name": "Cart",
+    "settings": [
+      { "type": "checkbox", "id": "enable_cart_drawer", "label": "Enable cart drawer", "default": true }
+    ]
+  },
+  {
+    "name": "SEO",
+    "settings": [
+      { "type": "text", "id": "seo_home_title", "label": "Homepage SEO title", "default": "Mavilo Pet Co. | Practical Pet Wellness & Travel Accessories" },
+      { "type": "textarea", "id": "seo_home_description", "label": "Homepage meta description", "default": "Shop practical pet products for cleaning, grooming, comfort, and travel. Mavilo Pet Co. helps U.S. pet parents keep homes cleaner and routines easier. Free U.S. shipping over $50." }
+    ]
+  }
+]

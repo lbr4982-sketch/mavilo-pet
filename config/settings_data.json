@@ -1,0 +1,24 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "color_primary": "#2f6f5e",
+    "color_secondary": "#f2a65a",
+    "color_accent": "#7aa7c7",
+    "color_background": "#fffaf3",
+    "color_text": "#22312c",
+    "announcement": "Free U.S. shipping on orders over $50 | Easy returns within 30 days",
+    "enable_cart_drawer": true,
+    "seo_home_title": "Mavilo Pet Co. | Practical Pet Wellness & Travel Accessories",
+    "seo_home_description": "Shop practical pet products for cleaning, grooming, comfort, and travel. Mavilo Pet Co. helps U.S. pet parents keep homes cleaner and routines easier. Free U.S. shipping over $50.",
+    "logo": "shopify://shop_images/mavilo-logo-header.png",
+    "favicon": "shopify://shop_images/mavilo-favicon.png"
+  }
+}

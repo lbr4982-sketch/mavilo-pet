@@ -1,0 +1,38 @@
+{
+  "accessibility": {
+    "skip_to_content": "Skip to content",
+    "close": "Close",
+    "search": "Search",
+    "menu": "Menu"
+  },
+  "general": {
+    "search": {
+      "title": "Search",
+      "placeholder": "Search pet products",
+      "submit": "Search"
+    },
+    "newsletter": {
+      "label": "Email address",
+      "button": "Join the pack"
+    }
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "Add to cart",
+      "sold_out": "Sold out",
+      "unavailable": "Unavailable",
+      "quantity": "Quantity",
+      "sale_price": "Sale price",
+      "regular_price": "Regular price"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Cart",
+      "empty": "Your cart is empty",
+      "checkout": "Check out",
+      "subtotal": "Subtotal",
+      "remove": "Remove"
+    }
+  }
+}

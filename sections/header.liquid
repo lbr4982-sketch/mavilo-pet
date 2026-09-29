@@ -1,0 +1,25 @@
+{%- if settings.announcement != blank -%}<div class="announcement">{{ settings.announcement }}</div>{%- endif -%}
+<header class="site-header">
+  <div class="page-width header-inner">
+    <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-label="{{ 'accessibility.menu' | t }}">☰</button>
+    <a class="logo" href="{{ routes.root_url }}">
+      <img src="{{ 'mavilo-logo.png' | asset_url }}" alt="{{ shop.name }}" style="height:52px !important;width:52px !important;max-width:none !important;object-fit:contain;display:block;" loading="eager">
+    </a>
+    <nav class="nav" data-nav>
+      {%- for link in section.settings.menu.links -%}<a href="{{ link.url }}">{{ link.title }}</a>{%- endfor -%}
+    </nav>
+    <div class="header-actions">
+      <a class="icon-link" href="{{ routes.search_url }}" aria-label="{{ 'accessibility.search' | t }}">Search</a>
+      <a class="icon-link" href="{{ routes.account_url }}">Account</a>
+      <a class="icon-link" href="{{ routes.cart_url }}" {% if settings.enable_cart_drawer %}data-cart-open{% endif %}>Cart <span class="cart-count" data-cart-count>{{ cart.item_count }}</span></a>
+    </div>
+  </div>
+</header>
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+    { "type": "link_list", "id": "menu", "label": "Menu", "default": "main-menu" }
+  ]
+}
+{% endschema %}

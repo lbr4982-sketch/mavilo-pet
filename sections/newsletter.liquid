@@ -1,0 +1,23 @@
+<section class="section-spacing">
+  <div class="page-width">
+    <div class="newsletter">
+      <div><p class="eyebrow">{{ section.settings.eyebrow }}</p><h2>{{ section.settings.heading }}</h2><p>{{ section.settings.text }}</p></div>
+      {%- form 'customer', class: 'newsletter-form' -%}
+        <input type="hidden" name="contact[tags]" value="newsletter">
+        <input type="email" name="contact[email]" placeholder="{{ 'general.newsletter.label' | t }}" required>
+        <button class="button button--secondary" type="submit">{{ 'general.newsletter.button' | t }}</button>
+      {%- endform -%}
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Newsletter",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Join the pack" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Pet care tips and practical product drops" },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "Get helpful ideas for cleaner homes, easier grooming, and better everyday routines with pets." }
+  ],
+  "presets": [{ "name": "Newsletter" }]
+}
+{% endschema %}

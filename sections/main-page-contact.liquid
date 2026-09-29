@@ -1,0 +1,67 @@
+<section class="section-spacing">
+  <div class="page-width product-page">
+    <div>
+      <p class="eyebrow">{{ section.settings.eyebrow }}</p>
+      <h1>{{ section.settings.heading }}</h1>
+      <p class="muted">{{ section.settings.text }}</p>
+      <div class="value-card" style="margin-top:1rem">
+        <h3>{{ section.settings.support_heading }}</h3>
+        <p class="muted">{{ section.settings.support_text }}</p>
+      </div>
+    </div>
+    <div class="value-card">
+      {%- form 'contact', class: 'product-form' -%}
+        {%- if form.posted_successfully? -%}
+          <p class="form-status">Thanks for contacting us. We will get back to you soon.</p>
+        {%- endif -%}
+        {{ form.errors | default_errors }}
+        <div class="field"><input type="text" name="contact[name]" placeholder="Name" autocomplete="name" required></div>
+        <div class="field"><input type="email" name="contact[email]" placeholder="Email" autocomplete="email" required></div>
+        <div class="field"><input type="text" name="contact[order_number]" placeholder="Order number, if you have one"></div>
+        <div class="field"><textarea name="contact[body]" rows="7" placeholder="How can we help?" required></textarea></div>
+        <button class="button button--full" type="submit">Send message</button>
+      {%- endform -%}
+    </div>
+  </div>
+</section>
+
+<section class="section-spacing">
+  <div class="page-width">
+    <div class="card-grid">
+      {%- for block in section.blocks -%}
+        <div class="value-card" {{ block.shopify_attributes }}>
+          <p class="eyebrow">{{ block.settings.icon }}</p>
+          <h3>{{ block.settings.title }}</h3>
+          <p class="muted">{{ block.settings.text }}</p>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Contact page",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Contact Mavilo Pet Co." },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Need help with an order or product?" },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "Send us a message and include your order number if you have one. We are here to help with product questions, shipping updates, and order support." },
+    { "type": "text", "id": "support_heading", "label": "Support heading", "default": "Before you message us" },
+    { "type": "textarea", "id": "support_text", "label": "Support text", "default": "For order questions, include your order number and the email used at checkout. For product issues, photos can help us understand what happened." }
+  ],
+  "blocks": [
+    { "type": "info", "name": "Info card", "settings": [
+      { "type": "text", "id": "icon", "label": "Icon", "default": "📦" },
+      { "type": "text", "id": "title", "label": "Title", "default": "Order support" },
+      { "type": "textarea", "id": "text", "label": "Text", "default": "Have your order number ready so we can look up your purchase faster." }
+    ] }
+  ],
+  "presets": [
+    { "name": "Contact page", "blocks": [
+      { "type": "info", "settings": { "icon": "📦", "title": "Order support", "text": "Have your order number ready so we can look up your purchase faster." } },
+      { "type": "info", "settings": { "icon": "🐾", "title": "Product questions", "text": "Ask about sizing, intended use, or which routine a product best supports." } },
+      { "type": "info", "settings": { "icon": "🚚", "title": "Shipping help", "text": "Use your tracking email first, then contact us if something looks wrong." } },
+      { "type": "info", "settings": { "icon": "💚", "title": "Pet parent care", "text": "We aim to keep support simple, practical, and helpful." } }
+    ] }
+  ]
+}
+{% endschema %}

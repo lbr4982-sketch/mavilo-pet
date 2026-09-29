@@ -1,0 +1,22 @@
+<section class="section-spacing">
+  <div class="page-width">
+    <h1>{{ 'cart.general.title' | t }}</h1>
+    {%- if cart.item_count == 0 -%}
+      <div class="empty-state"><p>{{ 'cart.general.empty' | t }}</p><a class="button" href="{{ routes.all_products_collection_url }}">Shop all products</a></div>
+    {%- else -%}
+      <form action="{{ routes.cart_url }}" method="post">
+        {%- for item in cart.items -%}
+          <div class="cart-item">
+            {%- if item.image -%}{{ item.image | image_url: width: 180 | image_tag: loading: 'lazy', alt: item.product.title }}{%- endif -%}
+            <div><h3><a href="{{ item.url }}">{{ item.product.title }}</a></h3><p class="muted">{{ item.variant.title }}</p><input type="number" name="updates[]" value="{{ item.quantity }}" min="0"></div>
+            <strong>{{ item.final_line_price | money }}</strong>
+          </div>
+        {%- endfor -%}
+        <p><strong>{{ 'cart.general.subtotal' | t }}: {{ cart.total_price | money }}</strong></p>
+        <button class="button button--outline" type="submit">Update cart</button>
+        <button class="button" name="checkout" type="submit">{{ 'cart.general.checkout' | t }}</button>
+      </form>
+    {%- endif -%}
+  </div>
+</section>
+{% schema %}{ "name": "Main cart" }{% endschema %}

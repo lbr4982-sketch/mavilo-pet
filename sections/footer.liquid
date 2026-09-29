@@ -1,0 +1,43 @@
+<footer class="footer">
+  <div class="page-width">
+    <div class="footer-grid">
+      <div>
+        <h3>{{ section.settings.heading }}</h3>
+        <p>{{ section.settings.text }}</p>
+        {% render 'social-links' %}
+      </div>
+      <div>
+        <h3>Shop</h3>
+        {%- assign shop_menu = linklists['footer-shop'] -%}
+        {%- if shop_menu.links.size == 0 -%}{%- assign shop_menu = section.settings.shop_menu -%}{%- endif -%}
+        {%- for link in shop_menu.links -%}<p><a href="{{ link.url }}">{{ link.title }}</a></p>{%- endfor -%}
+      </div>
+      <div>
+        <h3>Support</h3>
+        {%- assign support_menu = linklists['footer-support'] -%}
+        {%- if support_menu.links.size == 0 -%}{%- assign support_menu = section.settings.support_menu -%}{%- endif -%}
+        {%- for link in support_menu.links -%}<p><a href="{{ link.url }}">{{ link.title }}</a></p>{%- endfor -%}
+      </div>
+      <div>
+        <h3>Get pet care tips</h3>
+        {%- form 'customer', class: 'newsletter-form' -%}
+          <input type="hidden" name="contact[tags]" value="newsletter">
+          <input type="email" name="contact[email]" placeholder="Email address" required>
+          <button class="button button--secondary" type="submit">Join</button>
+        {%- endform -%}
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; {{ 'now' | date: '%Y' }} {{ shop.name }}. Practical pet wellness products for U.S. households.</div>
+  </div>
+</footer>
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Mavilo Pet Co." },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "Useful products for cleaning, grooming, comfort, walking, and travel with pets." },
+    { "type": "link_list", "id": "shop_menu", "label": "Shop menu", "default": "footer" },
+    { "type": "link_list", "id": "support_menu", "label": "Support menu", "default": "footer" }
+  ]
+}
+{% endschema %}

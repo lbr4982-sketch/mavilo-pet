@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="{{ settings.color_primary }}">
+    <link rel="canonical" href="{{ canonical_url }}">
+
+    {%- if settings.favicon != blank -%}
+      <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
+    {%- endif -%}
+
+    <title>
+      {%- if template.name == 'index' and settings.seo_home_title != blank -%}
+        {{ settings.seo_home_title }}
+      {%- else -%}
+        {{ page_title }}{% if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif %}{% if current_page != 1 %} &ndash; Page {{ current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
+      {%- endif -%}
+    </title>
+
+    {%- if template.name == 'index' and settings.seo_home_description != blank -%}
+      <meta name="description" content="{{ settings.seo_home_description | escape }}">
+    {%- elsif page_description -%}
+      <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+
+    {{ content_for_header }}
+
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    {{ 'theme.css' | asset_url | stylesheet_tag }}
+    {%- comment -%} theme.css는 정적 파일이라 Liquid 설정값이 렌더되지 않음 — 변수는 여기서 주입 {%- endcomment -%}
+    <style>
+      :root {
+        --color-primary: {{ settings.color_primary | default: '#2f6f5e' }};
+        --color-secondary: {{ settings.color_secondary | default: '#f2a65a' }};
+        --color-accent: {{ settings.color_accent | default: '#7aa7c7' }};
+        --color-background: {{ settings.color_background | default: '#fffaf3' }};
+        --color-text: {{ settings.color_text | default: '#22312c' }};
+      }
+    </style>
+    <script src="{{ 'theme.js' | asset_url }}" defer></script>
+  </head>
+  <body class="template-{{ template.name | handle }}">
+    <a class="skip-link" href="#MainContent">{{ 'accessibility.skip_to_content' | t }}</a>
+
+    {% sections 'header-group' %}
+
+    <main id="MainContent" class="main-content" role="main" tabindex="-1">
+      {{ content_for_layout }}
+    </main>
+
+    {% sections 'footer-group' %}
+
+    <div class="cart-drawer" data-cart-drawer aria-hidden="true">
+      <div class="cart-drawer__overlay" data-cart-close></div>
+      <aside class="cart-drawer__panel" role="dialog" aria-modal="true" aria-label="{{ 'cart.general.title' | t }}">
+        <button class="cart-drawer__close" data-cart-close aria-label="{{ 'accessibility.close' | t }}">&times;</button>
+        <div data-cart-content></div>
+      </aside>
+    </div>
+  </body>
+</html>

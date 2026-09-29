@@ -1,0 +1,74 @@
+<section class="section-spacing" data-product-section data-money-format="{{ shop.money_format | escape }}">
+  <div class="page-width product-page">
+    <div class="product-gallery">
+      <div class="product-gallery__main">
+        {%- if product.featured_media -%}
+          {{ product.featured_media | image_url: width: 1200 | image_tag: widths: '600, 900, 1200', alt: product.featured_media.alt | default: product.title, data-product-featured-image: '' }}
+        {%- else -%}
+          {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+      </div>
+      {%- if product.media.size > 1 -%}
+        <div class="card-grid">
+          {%- for media in product.media limit: 4 -%}
+            <button class="product-gallery__main" type="button" data-product-thumbnail data-image-src="{{ media | image_url: width: 1200 }}" data-image-alt="{{ media.alt | default: product.title | escape }}">
+              {{ media | image_url: width: 400 | image_tag: loading: 'lazy', alt: media.alt | default: product.title }}
+            </button>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+    </div>
+    <div class="product-info">
+      <div class="product-meta"><span class="badge">Mavilo Pick</span>{% if product.vendor != blank %}<span class="muted">{{ product.vendor }}</span>{% endif %}</div>
+      <h1>{{ product.title }}</h1>
+      <div data-product-price>{% render 'price', product: product %}</div>
+      <p class="muted" data-product-availability>
+        {%- if product.selected_or_first_available_variant.available -%}In stock and ready to order{%- else -%}Currently unavailable{%- endif -%}
+      </p>
+      {%- if product.description != blank -%}<div class="richtext">{{ product.description }}</div>{%- endif -%}
+
+      {%- form 'product', product, data-product-form: '', class: 'product-form' -%}
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" data-variant-id>
+        {%- unless product.has_only_default_variant -%}
+          {%- for option in product.options_with_values -%}
+            <div class="option-group">
+              <strong>{{ option.name }}</strong>
+              <div class="option-values">
+                {%- for value in option.values -%}
+                  <input type="radio" id="Option-{{ option.position }}-{{ forloop.index0 }}" name="options[{{ option.position }}]" value="{{ value | escape }}" data-option-position="{{ option.position }}" {% if option.selected_value == value %}checked{% endif %}>
+                  <label for="Option-{{ option.position }}-{{ forloop.index0 }}">{{ value }}</label>
+                {%- endfor -%}
+              </div>
+            </div>
+          {%- endfor -%}
+        {%- endunless -%}
+        <label><strong>{{ 'products.product.quantity' | t }}</strong></label>
+        {% render 'quantity-input', value: 1 %}
+        <button class="button button--full" type="submit" data-add-to-cart {% unless product.selected_or_first_available_variant.available %}disabled{% endunless %}>
+          <span data-add-to-cart-text>{%- if product.selected_or_first_available_variant.available -%}{{ 'products.product.add_to_cart' | t }}{%- else -%}{{ 'products.product.sold_out' | t }}{%- endif -%}</span>
+        </button>
+        {{ form | payment_button }}
+      {%- endform -%}
+
+      <script type="application/json" data-product-json>
+        {{ product | json }}
+      </script>
+
+      <div class="value-card" style="margin-top:1rem">
+        <h3>Why pet parents choose it</h3>
+        <p class="muted">Selected for everyday usefulness, easy care, and practical routines at home or on the go.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sticky-atc" data-sticky-atc aria-hidden="false">
+    <div class="sticky-atc__info">
+      <strong class="sticky-atc__title">{{ product.title }}</strong>
+      <span class="price" data-product-price-sticky>{{ product.selected_or_first_available_variant.price | money }}</span>
+    </div>
+    <button class="button sticky-atc__button" type="button" data-sticky-add {% unless product.selected_or_first_available_variant.available %}disabled{% endunless %}>
+      {%- if product.selected_or_first_available_variant.available -%}{{ 'products.product.add_to_cart' | t }}{%- else -%}{{ 'products.product.sold_out' | t }}{%- endif -%}
+    </button>
+  </div>
+</section>
+{% schema %}{ "name": "Main product" }{% endschema %}

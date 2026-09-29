@@ -1,0 +1,12 @@
+<section class="section-spacing">
+  <div class="page-width">
+    <h1>Addresses</h1>
+    <p><a class="button button--outline" href="{{ routes.account_url }}">Back to account</a></p>
+    <div class="card-grid">
+      {%- for address in customer.addresses -%}
+        <div class="value-card"><h3>{% if address == customer.default_address %}Default address{% else %}Address{% endif %}</h3>{{ address | format_address }}</div>
+      {%- else -%}<p class="muted">No saved addresses.</p>{%- endfor -%}
+    </div>
+  </div>
+</section>
+{% schema %}{ "name": "Main addresses" }{% endschema %}

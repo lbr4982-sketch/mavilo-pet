@@ -1,0 +1,10 @@
+# 유료 강의 교재 (저작권) / 대화 로그 / 비공개 사업 문서
+course-materials/
+business-plan/
+*.txt
+.claude/
+# Shopify CLI / OS
+.shopify/
+node_modules/
+.DS_Store
+Thumbs.db

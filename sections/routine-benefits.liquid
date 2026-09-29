@@ -1,0 +1,43 @@
+<section class="section-spacing">
+  <div class="page-width">
+    <div class="section-header">
+      <p class="eyebrow">{{ section.settings.eyebrow }}</p>
+      <h2>{{ section.settings.heading }}</h2>
+      <p class="muted">{{ section.settings.text }}</p>
+    </div>
+    <div class="card-grid">
+      {%- for block in section.blocks -%}
+        <div class="value-card" {{ block.shopify_attributes }}>
+          <p class="eyebrow">{{ block.settings.step }}</p>
+          <h3>{{ block.settings.title }}</h3>
+          <p class="muted">{{ block.settings.text }}</p>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Routine benefits",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Daily pet routines" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Shop by the problems pet parents actually deal with" },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "From shedding to car rides, Mavilo Pet Co. organizes products around practical outcomes." }
+  ],
+  "blocks": [
+    { "type": "benefit", "name": "Benefit", "settings": [
+      { "type": "text", "id": "step", "label": "Label", "default": "01" },
+      { "type": "text", "id": "title", "label": "Title", "default": "Clean up faster" },
+      { "type": "textarea", "id": "text", "label": "Text", "default": "Reduce fur, dirt, and paw mess after walks or play." }
+    ] }
+  ],
+  "presets": [
+    { "name": "Routine benefits", "blocks": [
+      { "type": "benefit", "settings": { "step": "01", "title": "Clean up faster", "text": "Reduce fur, dirt, and paw mess after walks or play." } },
+      { "type": "benefit", "settings": { "step": "02", "title": "Make grooming simpler", "text": "Support bath days, brushing, and coat care with practical tools." } },
+      { "type": "benefit", "settings": { "step": "03", "title": "Walk with less hassle", "text": "Find accessories for smoother daily walks and outdoor routines." } },
+      { "type": "benefit", "settings": { "step": "04", "title": "Travel more comfortably", "text": "Bring portable comfort and organization for errands and road trips." } }
+    ] }
+  ]
+}
+{% endschema %}

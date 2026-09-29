@@ -1,0 +1,21 @@
+<section class="section-spacing">
+  <div class="page-width">
+    <h1>My account</h1>
+    <p><a class="button button--outline" href="{{ routes.account_logout_url }}">Log out</a></p>
+    <div class="collection-grid">
+      <div>
+        <h2>Order history</h2>
+        {%- if customer.orders.size > 0 -%}
+          {%- paginate customer.orders by 20 -%}
+            {%- for order in customer.orders -%}
+              <div class="value-card"><h3><a href="{{ order.customer_url }}">{{ order.name }}</a></h3><p>{{ order.created_at | date: '%B %d, %Y' }} · {{ order.total_price | money }}</p><p class="muted">{{ order.fulfillment_status_label }}</p></div>
+            {%- endfor -%}
+            {%- if paginate.pages > 1 -%}<nav class="pagination">{{ paginate | default_pagination }}</nav>{%- endif -%}
+          {%- endpaginate -%}
+        {%- else -%}<p class="muted">You have not placed any orders yet.</p>{%- endif -%}
+      </div>
+      <aside class="filters"><h2>Account details</h2><p>{{ customer.name }}</p><p>{{ customer.email }}</p><a href="{{ routes.account_addresses_url }}">View addresses</a></aside>
+    </div>
+  </div>
+</section>
+{% schema %}{ "name": "Main account" }{% endschema %}

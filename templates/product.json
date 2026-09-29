@@ -1,0 +1,83 @@
+{
+  "sections": {
+    "main": { "type": "main-product" },
+    "product_benefits": { "type": "product-benefits" },
+    "details_accordion": {
+      "type": "product-accordion",
+      "blocks": {
+        "materials": {
+          "type": "item",
+          "settings": {
+            "title": "Materials",
+            "content": "<p>Made with pet-safe, easy-clean materials chosen for everyday use. See the product description above for item-specific details.</p>",
+            "use_metafield": true,
+            "metafield_key": "custom.materials"
+          }
+        },
+        "dimensions": {
+          "type": "item",
+          "settings": {
+            "title": "Dimensions & fit",
+            "content": "<p>Size and fit details are listed in the product description. If you're between sizes, we recommend sizing up for comfort.</p>",
+            "use_metafield": true,
+            "metafield_key": "custom.dimensions"
+          }
+        },
+        "care": {
+          "type": "item",
+          "settings": {
+            "title": "Care instructions",
+            "content": "<p>Most Mavilo products rinse clean with warm water or wipe down with a damp cloth. Check the description for item-specific washing guidance, and air-dry fully before the next use.</p>",
+            "use_metafield": true,
+            "metafield_key": "custom.care"
+          }
+        },
+        "shipping": {
+          "type": "item",
+          "settings": {
+            "title": "Shipping information",
+            "content": "<p>Orders are processed within 1–3 business days. U.S. delivery typically takes 7–15 business days, and tracking is emailed as soon as your order ships. Free U.S. shipping on orders over $50.</p>"
+          }
+        },
+        "faq_sizing": {
+          "type": "item",
+          "settings": {
+            "title": "FAQ: Will this work for my pet?",
+            "content": "<p>Our products are designed for everyday use with most dogs and cats. Check the size guidance in the description, and feel free to contact us with your pet's details — we're happy to help you choose.</p>"
+          }
+        },
+        "faq_returns": {
+          "type": "item",
+          "settings": {
+            "title": "FAQ: What if it doesn't work out?",
+            "content": "<p>We offer 30-day returns on unused items in original packaging. If anything arrives damaged or incorrect, contact us and we'll make it right with a replacement or refund.</p>"
+          }
+        }
+      },
+      "block_order": ["materials", "dimensions", "care", "shipping", "faq_sizing", "faq_returns"],
+      "settings": { "heading": "Product details", "open_first": true }
+    },
+    "shipping_returns": {
+      "type": "shipping-returns",
+      "settings": {
+        "eyebrow": "Shipping & returns",
+        "heading": "Clear expectations before checkout",
+        "text": "We ship within the United States. Orders are processed in 1–3 business days and typically arrive in 7–15 business days. Free shipping on all orders over $50. Returns accepted within 30 days on unused items in original packaging.",
+        "box_heading": "Need help with an order?",
+        "box_text": "Have your order number ready and contact support for product or delivery questions.",
+        "link_label": "Contact support",
+        "link": "/pages/contact-1"
+      }
+    },
+    "complete_routine": {
+      "type": "complete-routine",
+      "settings": {
+        "eyebrow": "Goes well together",
+        "heading": "Complete the routine",
+        "text": "Pair it with everyday helpers pet parents reach for most.",
+        "limit": 4
+      }
+    }
+  },
+  "order": ["main", "product_benefits", "details_accordion", "shipping_returns", "complete_routine"]
+}
