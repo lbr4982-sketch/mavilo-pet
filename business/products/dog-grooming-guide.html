@@ -1,0 +1,321 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>At-Home Dog Grooming Guide | Mavilo Pet Co.</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>
+@page { size: Letter; margin: 0.6in 0.6in 0.7in 0.6in;
+  @bottom-left { content: "Mavilo Pet Co.  \2022  At-Home Dog Grooming Guide"; font-family: -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 8pt; color: #6b7a74; }
+  @bottom-right { content: "Page " counter(page); font-family: -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 8pt; color: #6b7a74; }
+}
+@page :first { margin: 0; @bottom-left { content: none; } @bottom-right { content: none; } }
+* { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+html, body { margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #22312c; font-size: 9.8pt; line-height: 1.42; background: #fff; }
+h1, h2, h3, h4 { color: #2f6f5e; line-height: 1.2; margin: 0 0 .45em; }
+h1 { font-size: 21pt; letter-spacing: -.01em; }
+h2 { font-size: 13pt; margin-top: .85em; }
+h3 { font-size: 10.8pt; margin-top: .7em; color: #22312c; }
+p { margin: 0 0 .5em; }
+ul, ol { margin: 0 0 .55em; padding-left: 1.3em; }
+li { margin-bottom: .15em; }
+strong { color: #1f4f42; }
+.page { page-break-before: always; break-before: page; }
+.kicker { display: inline-flex; align-items: center; gap: 6px; font-size: 8.5pt; font-weight: 700; letter-spacing: .14em;
+  text-transform: uppercase; color: #c9772c; margin-bottom: 4px; }
+.sec-head { border-bottom: 3px solid #f2a65a; padding-bottom: 7px; margin-bottom: 11px; position: relative; }
+.sec-head h1 { margin: 0; }
+.sec-head .lead { margin: 4px 0 0; color: #4b5d56; font-size: 10.3pt; }
+.keep { break-inside: avoid; page-break-inside: avoid; }
+
+/* Cover */
+.cover { width: 8.5in; height: 10.99in; position: relative; overflow: hidden; background: #fffaf3; }
+.cover .band { position: absolute; left: 0; top: 0; width: 100%; height: 5.6in; background: #2f6f5e; }
+.cover .band:after { content: ""; position: absolute; left: -10%; right: -10%; bottom: -1.1in; height: 2.2in; background: #fffaf3; border-radius: 50%; }
+.cover .wordmark { position: absolute; top: .6in; left: .75in; display: flex; align-items: center; gap: 10px; color: #fffaf3;
+  font-size: 15pt; font-weight: 800; letter-spacing: .02em; }
+.cover .wordmark small { display: block; font-size: 7.5pt; font-weight: 600; letter-spacing: .28em; text-transform: uppercase; color: #f7cfa4; }
+.cover .tag { position: absolute; top: .66in; right: .75in; background: #f2a65a; color: #22312c; font-weight: 800; font-size: 8pt;
+  letter-spacing: .16em; text-transform: uppercase; padding: 6px 12px; border-radius: 30px; }
+.cover .titlebox { position: absolute; left: .75in; right: .75in; top: 1.85in; color: #fffaf3; }
+.cover .eyebrow { font-size: 10pt; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: #f7cfa4; margin-bottom: 12px; }
+.cover h1.ctitle { color: #fffaf3; font-size: 40pt; line-height: 1.04; margin: 0 0 16px; font-weight: 850; letter-spacing: -.02em; }
+.cover .csub { font-size: 13.5pt; line-height: 1.4; color: #e6f0ec; max-width: 5.6in; }
+.cover .paws { position: absolute; }
+.cover .inside { position: absolute; left: .75in; right: .75in; top: 5.85in; }
+.cover .stats { position: absolute; left: .75in; right: .75in; top: 8.05in; display: flex; gap: 14px; }
+.cover .stat { flex: 1; background: #fff; border: 1px solid #efe1cd; border-radius: 12px; padding: 10px 14px; border-top: 4px solid #2f6f5e; }
+.cover .stat:nth-child(2) { border-top-color: #f2a65a; } .cover .stat:nth-child(3) { border-top-color: #7aa7c7; }
+.cover .stat b { display: block; font-size: 18pt; color: #2f6f5e; line-height: 1.1; } .cover .stat span { font-size: 9pt; color: #4b5d56; }
+.cover .inside h4 { color: #c9772c; font-size: 9pt; letter-spacing: .2em; text-transform: uppercase; margin: 0 0 10px; }
+.cover .inside ul { list-style: none; padding: 0; margin: 0; columns: 2; column-gap: .4in; }
+.cover .inside li { padding: 5px 0 5px 22px; position: relative; font-size: 10.5pt; break-inside: avoid; border-bottom: 1px dashed #e5d8c6; }
+.cover .inside li:before { content: ""; position: absolute; left: 2px; top: 11px; width: 9px; height: 9px; border-radius: 50%; background: #7aa7c7; }
+.cover .foot { position: absolute; left: 0; right: 0; bottom: 0; height: 1.05in; background: #22312c; color: #fffaf3; display: flex;
+  align-items: center; justify-content: space-between; padding: 0 .75in; font-size: 9pt; }
+.cover .foot b { color: #f2a65a; }
+.cover .stripe { position: absolute; left: 0; right: 0; bottom: 1.05in; height: 8px; background: linear-gradient(90deg, #f2a65a 0 33%, #7aa7c7 33% 66%, #2f6f5e 66%); }
+
+/* TOC */
+.toc { list-style: none; padding: 0; margin: 10px 0 0; counter-reset: toc; }
+.toc li { display: flex; align-items: baseline; padding: 7px 0; border-bottom: 1px solid #efe4d4; font-size: 11pt; margin: 0; }
+.toc li .n { width: 34px; font-weight: 800; color: #f2a65a; }
+.toc li .t { flex: 1; font-weight: 600; }
+.toc li .t small { display: block; font-weight: 400; color: #5d6f68; font-size: 9pt; }
+.toc li .pg { font-weight: 700; color: #2f6f5e; min-width: 30px; text-align: right; }
+
+/* Callouts */
+.callout { border-radius: 10px; padding: 8px 12px; margin: 8px 0 9px; background: #fffaf3; border-left: 5px solid #f2a65a; break-inside: avoid; }
+.callout.green { border-left-color: #2f6f5e; background: #eef5f2; }
+.callout.blue { border-left-color: #7aa7c7; background: #eef4f9; }
+.callout .ct { font-weight: 800; font-size: 9pt; letter-spacing: .12em; text-transform: uppercase; color: #c9772c; margin-bottom: 3px; }
+.callout.green .ct { color: #2f6f5e; }
+.callout.blue .ct { color: #3f7299; }
+.callout p:last-child, .callout ul:last-child { margin-bottom: 0; }
+.disclaimer { border: 1.5px solid #7aa7c7; background: #eef4f9; border-radius: 10px; padding: 10px 14px; font-size: 9.5pt; margin: 10px 0; break-inside: avoid; }
+.disclaimer b { color: #3f7299; }
+
+/* Grids and cards */
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 9px 14px; }
+.grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px 12px; }
+.card { background: #fffaf3; border: 1px solid #efe1cd; border-radius: 10px; padding: 8px 11px; break-inside: avoid; }
+.card h3, .card h4 { margin-top: 0; }
+.card h4 { font-size: 10.5pt; color: #2f6f5e; margin-bottom: 4px; }
+.card p:last-child, .card ul:last-child { margin-bottom: 0; }
+.pill { display: inline-block; font-size: 8pt; font-weight: 700; padding: 2px 8px; border-radius: 20px; background: #f2a65a; color: #22312c; letter-spacing: .05em; }
+.pill.g { background: #2f6f5e; color: #fff; }
+.pill.b { background: #7aa7c7; color: #fff; }
+.steps { counter-reset: st; list-style: none; padding: 0; }
+.steps > li { counter-increment: st; position: relative; padding: 1px 0 4px 32px; break-inside: avoid; }
+.steps > li:before { content: counter(st); position: absolute; left: 0; top: 1px; width: 23px; height: 23px; border-radius: 50%; background: #2f6f5e; color: #fff;
+  font-weight: 800; font-size: 9.5pt; text-align: center; line-height: 23px; }
+
+/* Tables */
+table { width: 100%; border-collapse: collapse; margin: 5px 0 9px; font-size: 9pt; }
+th { background: #2f6f5e; color: #fff; text-align: left; padding: 6px 7px; font-weight: 700; font-size: 9pt; }
+td { border-bottom: 1px solid #e7dccb; padding: 4px 7px; vertical-align: top; }
+tr:nth-child(even) td { background: #fdf6ec; }
+table.form td { height: 30px; border: 1px solid #d9ccb8; background: #fff !important; }
+table.form th { border: 1px solid #2f6f5e; }
+table.form.tall td { height: 38px; }
+.h56 table.form td { height: 56px; } .h48 table.form td { height: 48px; } .h36 table.form td { height: 36px; }
+table.compact td { padding: 2.5px 6px; }
+tr { break-inside: avoid; }
+
+/* Fill-in */
+.field { display: flex; align-items: flex-end; gap: 8px; margin: 9px 0; font-size: 10pt; }
+.field .lab { white-space: nowrap; font-weight: 600; color: #2f6f5e; }
+.field .line { flex: 1; border-bottom: 1.2px solid #b7a88f; height: 18px; }
+.fields2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 22px; }
+.lines .l { border-bottom: 1.2px solid #cdbfa7; height: 27px; }
+.checks { list-style: none; padding: 0; margin: 4px 0 10px; }
+.checks li { position: relative; padding: 3px 0 3px 25px; break-inside: avoid; margin: 0; }
+.checks li:before { content: ""; position: absolute; left: 0; top: 5px; width: 13px; height: 13px; border: 1.6px solid #2f6f5e; border-radius: 3px; background: #fff; }
+.checks.two { columns: 2; column-gap: 22px; }
+.box { display: inline-block; width: 12px; height: 12px; border: 1.5px solid #2f6f5e; border-radius: 3px; vertical-align: -1px; background: #fff; }
+.note-area { border: 1.2px dashed #cdbfa7; border-radius: 10px; min-height: 1.2in; padding: 8px 12px; color: #9a8b73; font-size: 9pt; }
+.small { font-size: 9pt; color: #4b5d56; }
+.center { text-align: center; }
+.muted { color: #5d6f68; }
+
+/* Closing */
+.closing { text-align: center; padding-top: 1.2in; }
+.closing h1 { font-size: 30pt; }
+.closing .big-paw { margin: 0 auto 18px; }
+.closing .msg { max-width: 5.3in; margin: 0 auto 18px; font-size: 11.5pt; }
+.closing .copy { margin-top: 1.4in; font-size: 9pt; color: #5d6f68; border-top: 1px solid #efe4d4; padding-top: 12px; }
+@media screen { body { background: #ddd; } .cover { margin: 0; } }
+</style></head><body>
+<div class="cover">
+  <div class="band"></div>
+  <div class="paws" style="left:6.35in;top:1.55in"><svg width="70" height="70" viewBox="0 0 100 100" style="transform:rotate(18deg);opacity:0.95;" aria-hidden="true"><g fill="#f2a65a"><ellipse cx="50" cy="66" rx="22" ry="19"/><ellipse cx="22" cy="40" rx="9" ry="12" transform="rotate(-20 22 40)"/><ellipse cx="39" cy="23" rx="9" ry="12" transform="rotate(-6 39 23)"/><ellipse cx="61" cy="23" rx="9" ry="12" transform="rotate(6 61 23)"/><ellipse cx="78" cy="40" rx="9" ry="12" transform="rotate(20 78 40)"/></g></svg></div><div class="paws" style="left:7.25in;top:2.55in"><svg width="44" height="44" viewBox="0 0 100 100" style="transform:rotate(30deg);opacity:0.9;" aria-hidden="true"><g fill="#7aa7c7"><ellipse cx="50" cy="66" rx="22" ry="19"/><ellipse cx="22" cy="40" rx="9" ry="12" transform="rotate(-20 22 40)"/><ellipse cx="39" cy="23" rx="9" ry="12" transform="rotate(-6 39 23)"/><ellipse cx="61" cy="23" rx="9" ry="12" transform="rotate(6 61 23)"/><ellipse cx="78" cy="40" rx="9" ry="12" transform="rotate(20 78 40)"/></g></svg></div><div class="paws" style="left:6.55in;top:3.35in"><svg width="52" height="52" viewBox="0 0 100 100" style="transform:rotate(12deg);opacity:0.18;" aria-hidden="true"><g fill="#fffaf3"><ellipse cx="50" cy="66" rx="22" ry="19"/><ellipse cx="22" cy="40" rx="9" ry="12" transform="rotate(-20 22 40)"/><ellipse cx="39" cy="23" rx="9" ry="12" transform="rotate(-6 39 23)"/><ellipse cx="61" cy="23" rx="9" ry="12" transform="rotate(6 61 23)"/><ellipse cx="78" cy="40" rx="9" ry="12" transform="rotate(20 78 40)"/></g></svg></div><div class="paws" style="left:7.45in;top:3.95in"><svg width="34" height="34" viewBox="0 0 100 100" style="transform:rotate(40deg);opacity:0.7;" aria-hidden="true"><g fill="#f2a65a"><ellipse cx="50" cy="66" rx="22" ry="19"/><ellipse cx="22" cy="40" rx="9" ry="12" transform="rotate(-20 22 40)"/><ellipse cx="39" cy="23" rx="9" ry="12" transform="rotate(-6 39 23)"/><ellipse cx="61" cy="23" rx="9" ry="12" transform="rotate(6 61 23)"/><ellipse cx="78" cy="40" rx="9" ry="12" transform="rotate(20 78 40)"/></g></svg></div><div class="paws" style="left:5.95in;top:4.35in"><svg width="30" height="30" viewBox="0 0 100 100" style="transform:rotate(-10deg);opacity:0.2;" aria-hidden="true"><g fill="#fffaf3"><ellipse cx="50" cy="66" rx="22" ry="19"/><ellipse cx="22" cy="40" rx="9" ry="12" transform="rotate(-20 22 40)"/><ellipse cx="39" cy="23" rx="9" ry="12" transform="rotate(-6 39 23)"/><ellipse cx="61" cy="23" rx="9" ry="12" transform="rotate(6 61 23)"/><ellipse cx="78" cy="40" rx="9" ry="12" transform="rotate(20 78 40)"/></g></svg></div><div class="paws" style="left:7.3in;top:0.95in"><svg width="26" height="26" viewBox="0 0 100 100" style="transform:rotate(20deg);opacity:0.25;" aria-hidden="true"><g fill="#fffaf3"><ellipse cx="50" cy="66" rx="22" ry="19"/><ellipse cx="22" cy="40" rx="9" ry="12" transform="rotate(-20 22 40)"/><ellipse cx="39" cy="23" rx="9" ry="12" transform="rotate(-6 39 23)"/><ellipse cx="61" cy="23" rx="9" ry="12" transform="rotate(6 61 23)"/><ellipse cx="78" cy="40" rx="9" ry="12" transform="rotate(20 78 40)"/></g></svg></div><div class="paws" style="left:7.6in;top:9.3in"><svg width="40" height="40" viewBox="0 0 100 100" style="transform:rotate(-15deg);opacity:0.12;" aria-hidden="true"><g fill="#2f6f5e"><ellipse cx="50" cy="66" rx="22" ry="19"/><ellipse cx="22" cy="40" rx="9" ry="12" transform="rotate(-20 22 40)"/><ellipse cx="39" cy="23" rx="9" ry="12" transform="rotate(-6 39 23)"/><ellipse cx="61" cy="23" rx="9" ry="12" transform="rotate(6 61 23)"/><ellipse cx="78" cy="40" rx="9" ry="12" transform="rotate(20 78 40)"/></g></svg></div><div class="paws" style="left:0.35in;top:9.35in"><svg width="28" height="28" viewBox="0 0 100 100" style="transform:rotate(10deg);opacity:0.35;" aria-hidden="true"><g fill="#f2a65a"><ellipse cx="50" cy="66" rx="22" ry="19"/><ellipse cx="22" cy="40" rx="9" ry="12" transform="rotate(-20 22 40)"/><ellipse cx="39" cy="23" rx="9" ry="12" transform="rotate(-6 39 23)"/><ellipse cx="61" cy="23" rx="9" ry="12" transform="rotate(6 61 23)"/><ellipse cx="78" cy="40" rx="9" ry="12" transform="rotate(20 78 40)"/></g></svg></div>
+  <div class="wordmark"><svg width="34" height="34" viewBox="0 0 100 100" style="transform:rotate(0deg);opacity:1.0;" aria-hidden="true"><g fill="#f2a65a"><ellipse cx="50" cy="66" rx="22" ry="19"/><ellipse cx="22" cy="40" rx="9" ry="12" transform="rotate(-20 22 40)"/><ellipse cx="39" cy="23" rx="9" ry="12" transform="rotate(-6 39 23)"/><ellipse cx="61" cy="23" rx="9" ry="12" transform="rotate(6 61 23)"/><ellipse cx="78" cy="40" rx="9" ry="12" transform="rotate(20 78 40)"/></g></svg><div>Mavilo Pet Co.<small>Happy pets, practical care</small></div></div>
+  <div class="tag">Printable Guide</div>
+  <div class="titlebox"><div class="eyebrow">Salon-fresh results at home</div><h1 class="ctitle">At-Home Dog<br>Grooming Guide</h1><div class="csub">Brushing, bathing, nails, ears, teeth and paws &mdash; step-by-step techniques, the right tools for every coat, and tips to keep grooming calm and stress-free.</div></div>
+  <div class="inside"><h4>What's inside</h4><ul><li>Coat types &amp; the right tools</li><li>Brushing &amp; bathing step by step</li><li>Nail trimming without fear</li><li>Ear cleaning &amp; tooth brushing</li><li>Paw care &amp; seasonal tips</li><li>Stress-free grooming methods</li><li>Schedule by coat type</li><li>Printable monthly checklist</li></ul></div>
+  <div class="stats"><div class="stat"><b>6</b><span>Coat types covered</span></div><div class="stat"><b>Step-by-step</b><span>Techniques for every task</span></div><div class="stat"><b>Monthly</b><span>Printable grooming checklist</span></div></div>
+  <div class="stripe"></div>
+  <div class="foot"><span><b>Mavilo Pet Co.</b> &nbsp;&middot;&nbsp; Happy pets, practical care</span><span>Printable PDF  •  US Letter</span></div>
+</div><section class="page" id="toc"><div class="sec-head"><div class="kicker"><svg width="12" height="12" viewBox="0 0 100 100" style="transform:rotate(0deg);opacity:1.0;" aria-hidden="true"><g fill="#f2a65a"><ellipse cx="50" cy="66" rx="22" ry="19"/><ellipse cx="22" cy="40" rx="9" ry="12" transform="rotate(-20 22 40)"/><ellipse cx="39" cy="23" rx="9" ry="12" transform="rotate(-6 39 23)"/><ellipse cx="61" cy="23" rx="9" ry="12" transform="rotate(6 61 23)"/><ellipse cx="78" cy="40" rx="9" ry="12" transform="rotate(20 78 40)"/></g></svg> Contents</div><h1>Table of Contents</h1></div><ol class="toc"><li><span class="n">01</span><span class="t">Welcome to At-Home Grooming<small>Why grooming matters and how to start</small></span><span class="pg">3</span></li><li><span class="n">02</span><span class="t">Coat Types &amp; Brushing Tools<small>Know your dog&rsquo;s coat and pick the right tools</small></span><span class="pg">4</span></li><li><span class="n">03</span><span class="t">Brushing Technique<small>Line brushing, de-shedding and mat prevention</small></span><span class="pg">5</span></li><li><span class="n">04</span><span class="t">Bathing Step by Step<small>From pre-bath brush-out to fluffy dry</small></span><span class="pg">6</span></li><li><span class="n">05</span><span class="t">Nail Trimming<small>Finding the quick and calm-handling tips</small></span><span class="pg">7</span></li><li><span class="n">06</span><span class="t">Ear Cleaning &amp; Teeth Brushing<small>Weekly ear checks and daily dental care</small></span><span class="pg">8</span></li><li><span class="n">07</span><span class="t">Paw Care &amp; Seasonal Tips<small>Pads, paw hair and year-round coat care</small></span><span class="pg">9</span></li><li><span class="n">08</span><span class="t">Making Grooming Stress-Free<small>Building a dog who enjoys being handled</small></span><span class="pg">10</span></li><li><span class="n">09</span><span class="t">Grooming Schedule by Coat Type<small>How often to do what</small></span><span class="pg">11</span></li><li><span class="n">10</span><span class="t">Printable Monthly Grooming Checklist<small>Track every task, every week</small></span><span class="pg">12</span></li></ol><div class="callout green" style="margin-top:22px"><div class="ct">How to use this PDF</div><p>Read it on screen or print the whole thing. Worksheet pages are designed to be printed again and again, so feel free to print extra copies of any tracker you use often. Tip: print at &ldquo;Actual size&rdquo; on US Letter paper.</p></div></section><section class="page" id="intro"><div class="sec-head"><div class="kicker"><svg width="12" height="12" viewBox="0 0 100 100" style="transform:rotate(0deg);opacity:1.0;" aria-hidden="true"><g fill="#f2a65a"><ellipse cx="50" cy="66" rx="22" ry="19"/><ellipse cx="22" cy="40" rx="9" ry="12" transform="rotate(-20 22 40)"/><ellipse cx="39" cy="23" rx="9" ry="12" transform="rotate(-6 39 23)"/><ellipse cx="61" cy="23" rx="9" ry="12" transform="rotate(6 61 23)"/><ellipse cx="78" cy="40" rx="9" ry="12" transform="rotate(20 78 40)"/></g></svg> Section 1</div><h1>Welcome to At-Home Grooming</h1><p class="lead">Grooming isn&rsquo;t just about looking good &mdash; it&rsquo;s one of the best ways to keep your dog healthy and comfortable.</p></div>
+<p>Regular grooming removes loose hair and dirt, prevents painful mats, keeps nails at a healthy length and gives you a chance to spot problems early: lumps, ticks, skin irritation, ear infections or sore paws. It&rsquo;s also wonderful bonding time. With the right tools and a patient approach, most grooming can be done at home in a few minutes a week.</p>
+<h2>The at-home grooming starter kit</h2>
+<div class="grid2">
+<div><ul class="checks"><li>Brush(es) matched to your dog&rsquo;s coat (see next section)</li><li>Stainless-steel comb with wide and fine teeth</li><li>Dog shampoo (and conditioner for long coats)</li><li>Absorbent towels + non-slip bath mat</li><li>Handheld sprayer or large cup for rinsing</li></ul></div>
+<div><ul class="checks"><li>Nail clippers (scissor or guillotine style) or a nail grinder</li><li>Styptic powder (or cornstarch) for nail nicks</li><li>Vet-recommended dog ear cleaner + cotton balls or gauze</li><li>Dog toothbrush or finger brush + dog toothpaste</li><li>High-value treats, lick mat, and plenty of patience</li></ul></div>
+</div>
+<h2>Golden rules</h2>
+<div class="grid3">
+<div class="card"><h4>Short &amp; sweet</h4><p class="small">Several 5-minute sessions beat one long wrestling match. Stop before your dog gets fidgety.</p></div>
+<div class="card"><h4>Treats for everything</h4><p class="small">Pair every touch, tool and sound with something your dog loves. It builds positive associations.</p></div>
+<div class="card"><h4>Safety first</h4><p class="small">Use non-slip surfaces, never leave a dog on a table unattended, and keep sharp tools pointed away from skin.</p></div>
+</div>
+<div class="callout green"><div class="ct">Your weekly health check</div><p>While grooming, gently run your hands over your whole dog. Look for lumps, bumps, cuts, hot spots, fleas, flea dirt (black specks that turn red on a damp paper towel), ticks, redness, odor, or anything that&rsquo;s new. Note changes and share them with your vet.</p></div>
+<div class="disclaimer"><b>Important:</b> This guide is general education, not veterinary advice; consult your veterinarian about your own pet's health, diet, medications, and any symptoms that concern you. If your dog has a skin condition, ear infection, injury, or pain, have them seen by your veterinarian before grooming the area.</div>
+</section><section class="page" id="coats"><div class="sec-head"><div class="kicker"><svg width="12" height="12" viewBox="0 0 100 100" style="transform:rotate(0deg);opacity:1.0;" aria-hidden="true"><g fill="#f2a65a"><ellipse cx="50" cy="66" rx="22" ry="19"/><ellipse cx="22" cy="40" rx="9" ry="12" transform="rotate(-20 22 40)"/><ellipse cx="39" cy="23" rx="9" ry="12" transform="rotate(-6 39 23)"/><ellipse cx="61" cy="23" rx="9" ry="12" transform="rotate(6 61 23)"/><ellipse cx="78" cy="40" rx="9" ry="12" transform="rotate(20 78 40)"/></g></svg> Section 2</div><h1>Coat Types &amp; Brushing Tools</h1><p class="lead">Every coat has different needs. Find your dog&rsquo;s type below, then choose tools to match.</p></div>
+<table class=""><thead><tr><th style="width:15%">Coat type</th><th style="width:27%">Example breeds</th><th style="width:30%">What it needs</th><th style="width:28%">Best tools</th></tr></thead><tbody><tr><td><b>Smooth / short</b></td><td>Boxer, Beagle, Dachshund (smooth), Doberman, Pit Bull types</td><td>Weekly brushing to remove loose hair and distribute skin oils</td><td>Rubber curry brush, bristle brush, grooming mitt</td></tr><tr><td><b>Double coat</b></td><td>Labrador, Golden Retriever, German Shepherd, Husky, Corgi</td><td>Frequent brushing, especially during seasonal shedding (&ldquo;coat blow&rdquo;)</td><td>Slicker brush, undercoat rake, wide-tooth comb, de-shedding tool (use gently)</td></tr><tr><td><b>Long / silky</b></td><td>Yorkshire Terrier, Shih Tzu, Maltese, Afghan Hound</td><td>Daily or every-other-day brushing to prevent tangles and mats</td><td>Pin brush, slicker brush, fine and wide-tooth comb, detangling spray</td></tr><tr><td><b>Curly / low-shedding</b></td><td>Poodle, Bichon Fris&eacute;, Portuguese Water Dog, doodles</td><td>Brushing several times a week to the skin; professional haircuts every 4&ndash;8 weeks</td><td>Slicker brush, long-tooth comb, mat splitter (with care)</td></tr><tr><td><b>Wire</b></td><td>Schnauzer, Wire Fox Terrier, West Highland Terrier, Airedale</td><td>Weekly brushing; hand-stripping or clipping a few times a year</td><td>Slicker brush, comb, stripping knife (or professional stripping)</td></tr><tr><td><b>Hairless / very fine</b></td><td>Chinese Crested, American Hairless Terrier, Xoloitzcuintli</td><td>Skin care: gentle baths, moisturizing, sun protection as advised by your vet</td><td>Soft cloth, gentle shampoo, dog-safe moisturizer</td></tr></tbody></table>
+<h2>Meet the tools</h2>
+<div class="grid3">
+<div class="card"><h4>Slicker brush</h4><p class="small">Fine wire bristles for removing tangles and loose undercoat. Use a light touch &mdash; pressing hard can cause &ldquo;brush burn.&rdquo;</p></div>
+<div class="card"><h4>Pin brush</h4><p class="small">Rounded pins glide through long coats and finish the look. Great for silky coats.</p></div>
+<div class="card"><h4>Bristle brush</h4><p class="small">Soft bristles smooth short coats and add shine by spreading natural oils.</p></div>
+<div class="card"><h4>Rubber curry</h4><p class="small">Loosens dead hair and massages the skin. Perfect for short coats and during baths.</p></div>
+<div class="card"><h4>Undercoat rake</h4><p class="small">Long teeth reach through the topcoat to lift shedding undercoat on double-coated dogs.</p></div>
+<div class="card"><h4>Steel comb</h4><p class="small">The &ldquo;truth-teller&rdquo;: if the comb glides from skin to tip, you&rsquo;ve brushed thoroughly.</p></div>
+</div>
+<div class="callout blue"><div class="ct">Should I shave my double-coated dog?</div><p>Generally, no. A double coat helps insulate your dog from both heat and cold and protects the skin from sunburn. Shaving can also change how the coat grows back. Regular brushing to remove loose undercoat is the better way to keep them comfortable. Ask your vet or groomer if there&rsquo;s a medical reason to clip.</p></div>
+</section><section class="page" id="brush"><div class="sec-head"><div class="kicker"><svg width="12" height="12" viewBox="0 0 100 100" style="transform:rotate(0deg);opacity:1.0;" aria-hidden="true"><g fill="#f2a65a"><ellipse cx="50" cy="66" rx="22" ry="19"/><ellipse cx="22" cy="40" rx="9" ry="12" transform="rotate(-20 22 40)"/><ellipse cx="39" cy="23" rx="9" ry="12" transform="rotate(-6 39 23)"/><ellipse cx="61" cy="23" rx="9" ry="12" transform="rotate(6 61 23)"/><ellipse cx="78" cy="40" rx="9" ry="12" transform="rotate(20 78 40)"/></g></svg> Section 3</div><h1>Brushing Technique</h1><p class="lead">Brushing the right way prevents mats, reduces shedding and keeps skin healthy.</p></div>
+<h2 style="margin-top:0">Step by step</h2>
+<ol class="steps">
+<li><strong>Set up:</strong> Choose a calm time (after a walk works well). Have treats ready and your dog on a non-slip mat.</li>
+<li><strong>Start easy:</strong> Begin with areas your dog enjoys, like the back and shoulders. Brush in the direction the hair grows.</li>
+<li><strong>Line brush longer coats:</strong> Lift a section of hair with one hand and brush the hair below it down, working from the skin outward in small rows. This reaches the skin instead of just skimming the top.</li>
+<li><strong>Work the friction zones:</strong> Mats form fastest behind the ears, in the armpits, on the chest, where the collar or harness sits, on the belly, and on the back of the legs (&ldquo;britches&rdquo;).</li>
+<li><strong>Comb to check:</strong> Run a steel comb through each area from skin to tip. If it catches, go back with the brush.</li>
+<li><strong>Finish and reward:</strong> End with a few long strokes, a treat and praise.</li>
+</ol>
+<h2>Dealing with tangles and mats</h2>
+<div class="grid2">
+<div class="card"><h4>Small tangles</h4><p>Hold the hair at the base (between the mat and the skin) so you don&rsquo;t pull on the skin. Tease the tangle apart with your fingers or the end tooth of a comb, working from the outside edge inward. A little detangling spray or cornstarch can help.</p></div>
+<div class="card"><h4>Tight or large mats</h4><p>Don&rsquo;t force them out, and <strong>don&rsquo;t cut mats with scissors</strong> &mdash; it&rsquo;s very easy to cut skin that&rsquo;s pulled up into the mat. Tight mats close to the skin are best shaved out by a professional groomer using clippers.</p></div>
+</div>
+<h2>Shedding season survival</h2>
+<ul>
+<li>Double-coated dogs often &ldquo;blow&rdquo; their undercoat in spring and fall. Brush daily for a few weeks during a heavy shed.</li>
+<li>Brushing outside or on an old sheet keeps the fluff contained.</li>
+<li>A warm bath followed by a thorough dry and brush-out helps release loose undercoat.</li>
+<li>Go gently with de-shedding tools that have a blade edge: a few light strokes per area, and avoid thin-skinned spots.</li>
+</ul>
+<div class="callout "><div class="ct">Pro tip</div><p>Brush <em>before</em> every bath. Water tightens mats and tangles, making them much harder to remove afterward.</p></div>
+</section><section class="page" id="bath"><div class="sec-head"><div class="kicker"><svg width="12" height="12" viewBox="0 0 100 100" style="transform:rotate(0deg);opacity:1.0;" aria-hidden="true"><g fill="#f2a65a"><ellipse cx="50" cy="66" rx="22" ry="19"/><ellipse cx="22" cy="40" rx="9" ry="12" transform="rotate(-20 22 40)"/><ellipse cx="39" cy="23" rx="9" ry="12" transform="rotate(-6 39 23)"/><ellipse cx="61" cy="23" rx="9" ry="12" transform="rotate(6 61 23)"/><ellipse cx="78" cy="40" rx="9" ry="12" transform="rotate(20 78 40)"/></g></svg> Section 4</div><h1>Bathing Step by Step</h1><p class="lead">Most dogs need a bath every 4&ndash;8 weeks, or when they&rsquo;re dirty or smelly. Your vet may recommend a different routine for skin conditions.</p></div>
+<ol class="steps">
+<li><strong>Gather everything first:</strong> dog shampoo, towels, cup or sprayer, non-slip mat, treats, and a lick mat smeared with a dog-safe spread to stick to the tub wall. Never leave your dog alone in the tub.</li>
+<li><strong>Brush thoroughly</strong> to remove loose hair and tangles.</li>
+<li><strong>Check the water:</strong> lukewarm, like a baby&rsquo;s bath. Test it on your inner wrist.</li>
+<li><strong>Wet from the neck back:</strong> Soak the coat all the way to the skin, starting at the neck and working back and down. Keep water out of the eyes, ears and nose; some owners place a cotton ball gently in the outer ear (remember to remove it).</li>
+<li><strong>Lather:</strong> Use a dog shampoo &mdash; human shampoo has a different pH and can irritate a dog&rsquo;s skin. Dilute it in a cup of water for easier spreading. Massage in, including legs, feet, belly and tail.</li>
+<li><strong>Wash the face last</strong> with a damp washcloth, avoiding the eyes.</li>
+<li><strong>Rinse, rinse, rinse:</strong> Leftover shampoo can cause itching and flaking. Rinse until the water runs clear and the coat feels squeaky clean, then rinse once more.</li>
+<li><strong>Condition (optional):</strong> For long or curly coats, apply dog conditioner, leave on as directed, and rinse well.</li>
+<li><strong>Towel dry:</strong> Squeeze (don&rsquo;t rub vigorously, which tangles long coats). Let your dog shake &mdash; hold up a towel as a shield!</li>
+<li><strong>Finish drying:</strong> Use a pet dryer or a human hair dryer on the <em>cool or low-heat</em> setting, kept moving and several inches from the skin. Brush as you dry for a fluffy finish. Thick coats must be dried to the skin to prevent hot spots.</li>
+</ol>
+<div class="grid2">
+<div class="callout green"><div class="ct">Choosing a shampoo</div><ul><li><strong>Everyday:</strong> gentle, fragrance-light formula</li><li><strong>Puppies:</strong> mild puppy shampoo</li><li><strong>Itchy or flaky skin:</strong> ask your vet &mdash; medicated shampoos are best used under veterinary guidance</li><li><strong>Avoid:</strong> human shampoos, dish soap, and strong essential oils</li></ul></div>
+<div class="callout "><div class="ct">Between baths</div><ul><li>Wipe paws and belly with a damp cloth after muddy walks</li><li>Spot-clean with a dog-safe waterless shampoo</li><li>Brush regularly &mdash; it keeps coats cleaner for longer</li><li>Wash your dog&rsquo;s bedding weekly</li></ul></div>
+</div>
+</section><section class="page" id="nails"><div class="sec-head"><div class="kicker"><svg width="12" height="12" viewBox="0 0 100 100" style="transform:rotate(0deg);opacity:1.0;" aria-hidden="true"><g fill="#f2a65a"><ellipse cx="50" cy="66" rx="22" ry="19"/><ellipse cx="22" cy="40" rx="9" ry="12" transform="rotate(-20 22 40)"/><ellipse cx="39" cy="23" rx="9" ry="12" transform="rotate(-6 39 23)"/><ellipse cx="61" cy="23" rx="9" ry="12" transform="rotate(6 61 23)"/><ellipse cx="78" cy="40" rx="9" ry="12" transform="rotate(20 78 40)"/></g></svg> Section 5</div><h1>Nail Trimming</h1><p class="lead">Overgrown nails can change how your dog stands and walks. If you hear clicking on hard floors, it&rsquo;s time for a trim.</p></div>
+<div class="grid2" style="align-items:center">
+<div>
+<h2 style="margin-top:0">Understanding the quick</h2>
+<p>Inside each nail is the <strong>quick</strong>: a blood vessel and nerve. Cutting it hurts and bleeds. In <strong>light-colored nails</strong> the quick looks pink through the nail. In <strong>dark nails</strong> you can&rsquo;t see it, so trim tiny slivers and look at the cut surface: when you see a chalky white or gray ring with a <strong>dark, moist-looking dot</strong> appearing in the center, stop &mdash; you&rsquo;re close.</p>
+</div>
+<div class="card"><svg viewBox="0 0 340 150" width="100%" style="max-width:3.4in;display:block;margin:4px auto">
+<path d="M20 75 Q20 40 70 38 L230 30 Q300 30 320 75 Q300 120 230 120 L70 112 Q20 110 20 75Z" fill="#f4ede2" stroke="#b7a88f" stroke-width="2"/>
+<path d="M40 75 Q40 58 80 56 L200 52 Q240 54 246 75 Q240 96 200 98 L80 94 Q40 92 40 75Z" fill="#f2a6a0" opacity=".85"/>
+<line x1="262" y1="18" x2="262" y2="132" stroke="#2f6f5e" stroke-width="3" stroke-dasharray="6 4"/>
+<text x="266" y="16" font-size="11" fill="#2f6f5e" font-weight="700">Safe cut line</text>
+<text x="95" y="80" font-size="12" fill="#7a2a24" font-weight="700">The quick</text>
+<text x="92" y="140" font-size="10" fill="#5d6f68">(blood vessel + nerve)</text>
+<text x="272" y="140" font-size="10" fill="#5d6f68">nail tip</text>
+</svg><p class="small center" style="margin:0">Side view of a nail. Stay on the tip side of the quick.</p></div>
+</div>
+<h2>Step by step</h2>
+<ol class="steps">
+<li>Sit with your dog in good light. Hold a paw gently but securely, pressing lightly on the pad to extend the nail.</li>
+<li>Trim a small piece at a slight angle, following the natural curve. With a grinder, touch the nail for 1&ndash;2 seconds at a time and keep it moving to avoid heat.</li>
+<li>Don&rsquo;t forget the <strong>dewclaws</strong> on the inside of the legs &mdash; they don&rsquo;t touch the ground and can curl into the pad if neglected.</li>
+<li>Treat after every nail (or every paw) at first. It&rsquo;s fine to do one paw a day.</li>
+<li>Most dogs need a trim every 2&ndash;4 weeks. Frequent small trims encourage the quick to recede over time.</li>
+</ol>
+<div class="grid2">
+<div class="callout "><div class="ct">If you cut the quick</div><p>Stay calm. Press styptic powder (or cornstarch/flour) onto the nail tip with gentle pressure for a minute or two until bleeding stops. Give a treat and end on an easy note. Call your vet if bleeding doesn&rsquo;t stop after several minutes of pressure.</p></div>
+<div class="callout green"><div class="ct">Calm-handling tips</div><ul><li>Practice touching paws daily, without clippers, for treats</li><li>Let your dog sniff the clippers; click them near a treat</li><li>Use a lick mat or have a helper feed treats slowly</li><li>Work in a sit or lying down, whichever your dog prefers</li><li>Stop at the first sign of stress and try again later</li></ul></div>
+</div>
+<p class="small">If your dog is very fearful or has thick, overgrown nails, ask your vet or groomer for help &mdash; they can trim safely and show you technique.</p>
+</section><section class="page" id="earsteeth"><div class="sec-head"><div class="kicker"><svg width="12" height="12" viewBox="0 0 100 100" style="transform:rotate(0deg);opacity:1.0;" aria-hidden="true"><g fill="#f2a65a"><ellipse cx="50" cy="66" rx="22" ry="19"/><ellipse cx="22" cy="40" rx="9" ry="12" transform="rotate(-20 22 40)"/><ellipse cx="39" cy="23" rx="9" ry="12" transform="rotate(-6 39 23)"/><ellipse cx="61" cy="23" rx="9" ry="12" transform="rotate(6 61 23)"/><ellipse cx="78" cy="40" rx="9" ry="12" transform="rotate(20 78 40)"/></g></svg> Section 6</div><h1>Ear Cleaning &amp; Teeth Brushing</h1><p class="lead">Two small habits that can prevent big (and expensive) problems.</p></div>
+<h2 style="margin-top:0">Ear care</h2>
+<p>Check ears weekly. Healthy ears are pale pink with little or no wax and no strong smell. Dogs with floppy ears, hairy ear canals, or who swim often may need cleaning more often &mdash; ask your vet what&rsquo;s right for your dog.</p>
+<div class="grid2">
+<div>
+<ol class="steps">
+<li>Use an ear cleaner made for dogs and recommended by your vet.</li>
+<li>Lift the ear flap and fill the canal with cleaner as directed on the label.</li>
+<li>Gently massage the base of the ear for about 20&ndash;30 seconds (you&rsquo;ll hear a squishing sound).</li>
+<li>Step back and let your dog shake.</li>
+<li>Wipe the visible part of the ear with a cotton ball or gauze. Reward!</li>
+</ol>
+</div>
+<div>
+<div class="callout blue"><div class="ct">Never</div><ul><li>Push cotton swabs into the ear canal &mdash; they can pack debris deeper or injure the eardrum</li><li>Use alcohol, hydrogen peroxide or vinegar unless your vet advises it</li><li>Clean an ear that looks red, swollen or painful &mdash; see your vet first</li></ul></div>
+</div>
+</div>
+<p><strong>See your vet if you notice:</strong> head shaking, scratching at ears, bad odor, dark or yellow discharge, redness, swelling, head tilt, or pain when the ear is touched.</p>
+<h2>Teeth brushing</h2>
+<p>Dental disease is one of the most common health problems in dogs, and most dogs show some signs of it by age three. Daily brushing is the gold standard; even a few times a week helps.</p>
+<div class="grid2">
+<div>
+<ol class="steps">
+<li><strong>Days 1&ndash;3:</strong> Let your dog lick dog toothpaste from your finger.</li>
+<li><strong>Days 4&ndash;6:</strong> Lift the lip and rub a finger along the outer surfaces of the teeth.</li>
+<li><strong>Days 7&ndash;10:</strong> Introduce a finger brush or soft dog toothbrush with paste.</li>
+<li><strong>Brushing:</strong> Angle bristles about 45&deg; toward the gumline and use small circles on the outer surfaces, especially the back teeth. 30 seconds per side is a great goal.</li>
+</ol>
+</div>
+<div>
+<div class="callout "><div class="ct">Toothpaste matters</div><p>Use <strong>only dog toothpaste</strong>. Human toothpaste isn&rsquo;t meant to be swallowed, and some contain <strong>xylitol</strong>, which is toxic to dogs. Look for dental products with the <strong>VOHC</strong> (Veterinary Oral Health Council) seal.</p></div>
+<div class="callout green"><div class="ct">Signs to watch</div><p>Bad breath, red or bleeding gums, brown tartar, loose or broken teeth, drooling, or chewing on one side. Your vet may recommend a professional dental cleaning.</p></div>
+</div>
+</div>
+</section><section class="page" id="paws"><div class="sec-head"><div class="kicker"><svg width="12" height="12" viewBox="0 0 100 100" style="transform:rotate(0deg);opacity:1.0;" aria-hidden="true"><g fill="#f2a65a"><ellipse cx="50" cy="66" rx="22" ry="19"/><ellipse cx="22" cy="40" rx="9" ry="12" transform="rotate(-20 22 40)"/><ellipse cx="39" cy="23" rx="9" ry="12" transform="rotate(-6 39 23)"/><ellipse cx="61" cy="23" rx="9" ry="12" transform="rotate(6 61 23)"/><ellipse cx="78" cy="40" rx="9" ry="12" transform="rotate(20 78 40)"/></g></svg> Section 7</div><h1>Paw Care &amp; Seasonal Tips</h1><p class="lead">Paws carry your dog everywhere. A quick weekly check keeps them comfortable year-round.</p></div>
+<h2 style="margin-top:0">Weekly paw check</h2>
+<div class="grid2">
+<div><ul class="checks"><li>Spread the toes and look for burrs, grass awns (foxtails), pebbles or splinters</li><li>Check pads for cracks, cuts, blisters or burns</li><li>Look for redness, swelling or licking between toes</li><li>Trim hair between pads so it&rsquo;s level with the pads (helps traction)</li></ul></div>
+<div><ul class="checks"><li>Check nail length and dewclaws</li><li>Wipe paws after walks to remove dirt, salt and chemicals</li><li>Apply a dog-safe paw balm to dry pads if needed</li><li>Watch for limping or excessive licking &mdash; call your vet</li></ul></div>
+</div>
+<div class="callout "><div class="ct">Pavement test</div><p>On warm days, press the back of your hand to the pavement for 7 seconds. If it&rsquo;s too hot for you, it&rsquo;s too hot for paws. Walk early or late, stick to grass and shade, and consider booties.</p></div>
+<h2>Seasonal grooming guide</h2>
+<div class="grid2">
+<div class="card"><h4>Spring</h4><ul><li>Heavy shedding for double coats &mdash; brush daily during the &ldquo;blow&rdquo;</li><li>Ask your vet about flea, tick and heartworm prevention</li><li>Muddy paws: keep a towel and water bowl by the door</li><li>Check for ticks after every outdoor adventure</li></ul></div>
+<div class="card"><h4>Summer</h4><ul><li>Brush out undercoat to improve airflow (don&rsquo;t shave double coats)</li><li>Rinse off chlorine or salt water after swimming, and dry ears well</li><li>Check for foxtails in ears, nose, eyes and toes</li><li>Ask your vet about pet-safe sunscreen for pink skin and thin coats</li></ul></div>
+<div class="card"><h4>Autumn</h4><ul><li>Second shedding season as the winter coat comes in</li><li>Watch for burrs and seeds in feathered legs and tails</li><li>Keep up with tick checks &mdash; ticks can stay active in cool weather</li><li>Schedule a trim before the holidays</li></ul></div>
+<div class="card"><h4>Winter</h4><ul><li>Wipe paws after walks to remove ice-melt salt and chemicals</li><li>Keep paw hair trimmed to prevent ice balls between toes</li><li>Bathe less often if skin gets dry; always dry completely before going out</li><li>Consider booties and a coat for small or short-coated dogs</li></ul></div>
+</div>
+<div class="callout blue"><div class="ct">Antifreeze warning</div><p>Antifreeze (ethylene glycol) tastes sweet and is extremely toxic. Wipe up spills immediately, and call your vet or an animal poison control center right away if you suspect your dog licked any.</p></div>
+</section><section class="page" id="calm"><div class="sec-head"><div class="kicker"><svg width="12" height="12" viewBox="0 0 100 100" style="transform:rotate(0deg);opacity:1.0;" aria-hidden="true"><g fill="#f2a65a"><ellipse cx="50" cy="66" rx="22" ry="19"/><ellipse cx="22" cy="40" rx="9" ry="12" transform="rotate(-20 22 40)"/><ellipse cx="39" cy="23" rx="9" ry="12" transform="rotate(-6 39 23)"/><ellipse cx="61" cy="23" rx="9" ry="12" transform="rotate(6 61 23)"/><ellipse cx="78" cy="40" rx="9" ry="12" transform="rotate(20 78 40)"/></g></svg> Section 8</div><h1>Making Grooming Stress-Free</h1><p class="lead">The goal isn&rsquo;t just a clean dog &mdash; it&rsquo;s a dog who feels safe during care.</p></div>
+<p>Many dogs find grooming uncomfortable because they&rsquo;re being restrained, handled in sensitive spots, or exposed to strange sounds. The good news: with patient, positive training, most dogs can learn to relax &mdash; or even enjoy it.</p>
+<h2>The step-by-step desensitization method</h2>
+<ol class="steps">
+<li><strong>Find the starting point:</strong> What&rsquo;s the smallest version your dog is comfortable with? (Maybe just seeing the clippers from across the room.)</li>
+<li><strong>Pair it with treats:</strong> Tool appears &rarr; treat. Tool disappears &rarr; treats stop. Repeat until your dog looks happy when the tool appears.</li>
+<li><strong>Take tiny steps:</strong> Tool closer &rarr; tool touches paw &rarr; clipper sound near paw &rarr; one nail. Only move forward when your dog is relaxed at the current step.</li>
+<li><strong>Keep sessions short:</strong> 1&ndash;3 minutes, ending on success.</li>
+</ol>
+<div class="grid2">
+<div class="card"><h4>Cooperative care: the &ldquo;chin rest&rdquo;</h4><p>Teach your dog to rest their chin on your hand, a towel or a cushion. While their chin stays down, you groom; if they lift their chin, you pause. This gives your dog a way to say &ldquo;I need a break,&rdquo; which often builds trust and tolerance quickly.</p></div>
+<div class="card"><h4>Helpful tools</h4><ul><li>Lick mat with a dog-safe spread</li><li>Non-slip mat or yoga mat for secure footing</li><li>Towel wrap for small dogs (gentle, not tight)</li><li>A helper to feed treats</li></ul></div>
+</div>
+<h2>Know the signs of stress</h2>
+<table>
+<thead><tr><th>Mild stress &mdash; slow down</th><th>Moderate stress &mdash; pause and make it easier</th><th>High stress &mdash; stop</th></tr></thead>
+<tbody><tr><td>Lip licking, yawning, turning head away, whale eye (whites of eyes showing)</td><td>Panting when not hot, trembling, pulling paw away, refusing treats</td><td>Freezing, growling, snapping, struggling hard, trying to escape</td></tr></tbody>
+</table>
+<div class="callout blue"><div class="ct">When to get help</div><p>If your dog growls, snaps or panics during grooming, stop and talk to your veterinarian. Pain (arthritis, ear infections, sore skin) is a common hidden cause. Your vet may suggest a professional groomer experienced with fearful dogs, a certified behavior professional, or discuss options to reduce anxiety for necessary care. Never punish growling &mdash; it&rsquo;s an important warning.</p></div>
+<h2>My dog&rsquo;s grooming notes</h2>
+<div class="grid2"><div><div class="field"><span class="lab">Favorite grooming treat</span><span class="line"></span></div><div class="field"><span class="lab">Most sensitive area</span><span class="line"></span></div></div><div><div class="field"><span class="lab">Best time of day</span><span class="line"></span></div><div class="field"><span class="lab">Progress goal</span><span class="line"></span></div></div></div>
+</section><section class="page" id="schedule"><div class="sec-head"><div class="kicker"><svg width="12" height="12" viewBox="0 0 100 100" style="transform:rotate(0deg);opacity:1.0;" aria-hidden="true"><g fill="#f2a65a"><ellipse cx="50" cy="66" rx="22" ry="19"/><ellipse cx="22" cy="40" rx="9" ry="12" transform="rotate(-20 22 40)"/><ellipse cx="39" cy="23" rx="9" ry="12" transform="rotate(-6 39 23)"/><ellipse cx="61" cy="23" rx="9" ry="12" transform="rotate(6 61 23)"/><ellipse cx="78" cy="40" rx="9" ry="12" transform="rotate(20 78 40)"/></g></svg> Section 9</div><h1>Grooming Schedule by Coat Type</h1><p class="lead">Use this as a starting point, then adjust for your dog&rsquo;s lifestyle, skin, age and your vet&rsquo;s advice.</p></div>
+<table class=""><thead><tr><th style="width:14%">Coat type</th><th style="width:16%">Brushing</th><th style="width:15%">Bathing</th><th style="width:17%">Professional grooming</th><th style="width:12%">Nails</th><th style="width:14%">Ears</th><th style="width:12%">Teeth</th></tr></thead><tbody><tr><td><b>Smooth / short</b></td><td>Weekly</td><td>Every 6&ndash;8 weeks or as needed</td><td>Rarely needed</td><td>Every 2&ndash;4 weeks</td><td>Check weekly</td><td>Daily if possible</td></tr><tr><td><b>Double coat</b></td><td>2&ndash;3&times; weekly; daily when shedding</td><td>Every 6&ndash;8 weeks</td><td>Optional de-shed every 2&ndash;3 months</td><td>Every 2&ndash;4 weeks</td><td>Check weekly</td><td>Daily if possible</td></tr><tr><td><b>Long / silky</b></td><td>Daily to every other day</td><td>Every 3&ndash;6 weeks</td><td>Trim every 4&ndash;8 weeks</td><td>Every 2&ndash;4 weeks</td><td>Check weekly; trim hair around ears</td><td>Daily if possible</td></tr><tr><td><b>Curly / low-shedding</b></td><td>3&ndash;4&times; weekly, to the skin</td><td>Every 3&ndash;6 weeks</td><td>Haircut every 4&ndash;8 weeks</td><td>Every 2&ndash;4 weeks</td><td>Check weekly (hair can trap moisture)</td><td>Daily if possible</td></tr><tr><td><b>Wire</b></td><td>Weekly</td><td>Every 6&ndash;8 weeks</td><td>Hand-strip or clip 2&ndash;4&times; a year</td><td>Every 2&ndash;4 weeks</td><td>Check weekly</td><td>Daily if possible</td></tr><tr><td><b>Hairless</b></td><td>Soft wipe-down as needed</td><td>Every 1&ndash;2 weeks (gentle)</td><td>Rarely needed</td><td>Every 2&ndash;4 weeks</td><td>Check weekly</td><td>Daily if possible</td></tr></tbody></table>
+<h2>Everyday extras for every dog</h2>
+<div class="grid3">
+<div class="card"><h4>Daily</h4><ul class="small"><li>Teeth brushing</li><li>Quick wipe of eye area if needed</li><li>Paw wipe after walks</li></ul></div>
+<div class="card"><h4>Weekly</h4><ul class="small"><li>Full-body health check</li><li>Ear check</li><li>Paw &amp; pad check</li><li>Wash bedding</li></ul></div>
+<div class="card"><h4>Monthly</h4><ul class="small"><li>Weigh your dog</li><li>Clean brushes and combs</li><li>Replace worn toothbrush as needed</li><li>Parasite prevention as prescribed</li></ul></div>
+</div>
+<h2>My dog&rsquo;s custom schedule</h2>
+<table class="form"><thead><tr><th style="width:20%">Task</th><th style="width:17%">How often</th><th style="width:17%">Day / time</th><th style="width:17%">Who does it</th><th style="width:29%">Notes</th></tr></thead><tbody><tr><td>Brushing</td><td></td><td></td><td></td><td></td></tr><tr><td>Bathing</td><td></td><td></td><td></td><td></td></tr><tr><td>Nail trim</td><td></td><td></td><td></td><td></td></tr><tr><td>Ear check / clean</td><td></td><td></td><td></td><td></td></tr><tr><td>Teeth</td><td></td><td></td><td></td><td></td></tr><tr><td>Paw check</td><td></td><td></td><td></td><td></td></tr><tr><td>Groomer visit</td><td></td><td></td><td></td><td></td></tr></tbody></table>
+</section><section class="page" id="checklist"><div class="sec-head"><div class="kicker"><svg width="12" height="12" viewBox="0 0 100 100" style="transform:rotate(0deg);opacity:1.0;" aria-hidden="true"><g fill="#f2a65a"><ellipse cx="50" cy="66" rx="22" ry="19"/><ellipse cx="22" cy="40" rx="9" ry="12" transform="rotate(-20 22 40)"/><ellipse cx="39" cy="23" rx="9" ry="12" transform="rotate(-6 39 23)"/><ellipse cx="61" cy="23" rx="9" ry="12" transform="rotate(6 61 23)"/><ellipse cx="78" cy="40" rx="9" ry="12" transform="rotate(20 78 40)"/></g></svg> Section 10</div><h1>Printable Monthly Grooming Checklist</h1><p class="lead">Print one per month. Check off each task when done and jot notes for your vet.</p></div>
+<div class="fields2"><div class="field"><span class="lab">Dog&rsquo;s name</span><span class="line"></span></div><div class="field"><span class="lab">Month / year</span><span class="line"></span></div></div>
+<div class="h36"><table class="form compact"><thead><tr><th style="width:30%">Task</th><th style="width:9%">Week 1</th><th style="width:9%">Week 2</th><th style="width:9%">Week 3</th><th style="width:9%">Week 4</th><th style="width:34%">Notes</th></tr></thead><tbody><tr><td>Brushing</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td></td></tr><tr><td>Comb-through / mat check</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td></td></tr><tr><td>Bath</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td></td></tr><tr><td>Nail trim</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td></td></tr><tr><td>Dewclaws</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td></td></tr><tr><td>Ear check</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td></td></tr><tr><td>Ear clean (if needed)</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td></td></tr><tr><td>Paw &amp; pad check</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td></td></tr><tr><td>Trim paw hair</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td></td></tr><tr><td>Full-body lump &amp; tick check</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td></td></tr><tr><td>Eye area wipe</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td></td></tr><tr><td>Wash bedding</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td></td></tr><tr><td>Clean tools</td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td><span class="box"></span></td><td></td></tr></tbody></table></div>
+<h2>Daily teeth brushing tracker</h2>
+<p class="small">Check or color each day you brush.</p>
+<div style="display:grid;grid-template-columns:repeat(16,1fr);gap:4px;margin:4px 0 10px"><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">1</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">2</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">3</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">4</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">5</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">6</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">7</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">8</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">9</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">10</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">11</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">12</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">13</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">14</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">15</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">16</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">17</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">18</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">19</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">20</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">21</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">22</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">23</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">24</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">25</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">26</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">27</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">28</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">29</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">30</div><div style="border:1.3px solid #2f6f5e;border-radius:5px;height:30px;font-size:7.5pt;color:#5d6f68;padding:1px 3px">31</div></div>
+<div class="grid2">
+<div class="card"><h4>Anything to show the vet?</h4><div class="lines"><div class="l" style="height:24px"></div><div class="l" style="height:24px"></div><div class="l" style="height:24px"></div></div></div>
+<div class="card"><h4>Wins this month</h4><div class="lines"><div class="l" style="height:24px"></div><div class="l" style="height:24px"></div><div class="l" style="height:24px"></div></div></div>
+</div>
+</section><section class="page closing" id="closing"><div class="big-paw"><svg width="80" height="80" viewBox="0 0 100 100" style="transform:rotate(0deg);opacity:1.0;" aria-hidden="true"><g fill="#f2a65a"><ellipse cx="50" cy="66" rx="22" ry="19"/><ellipse cx="22" cy="40" rx="9" ry="12" transform="rotate(-20 22 40)"/><ellipse cx="39" cy="23" rx="9" ry="12" transform="rotate(-6 39 23)"/><ellipse cx="61" cy="23" rx="9" ry="12" transform="rotate(6 61 23)"/><ellipse cx="78" cy="40" rx="9" ry="12" transform="rotate(20 78 40)"/></g></svg></div><h1>Happy grooming!</h1><div class="msg"><p>Thank you for choosing Mavilo Pet Co. Every brush stroke, nail trim and tooth brushing is an act of care &mdash; and with patience, a chance for your dog to learn that being handled is safe and rewarding. Start small, celebrate progress, and enjoy the extra cuddles with your fresh, fluffy friend.</p></div><div class="grid3" style="text-align:left;max-width:6.6in;margin:22px auto 0"><div class="card"><h4>Go slow</h4><p class="small">Short sessions and lots of treats build lasting trust.</p></div><div class="card"><h4>Stay consistent</h4><p class="small">Little and often beats long, stressful sessions.</p></div><div class="card"><h4>Ask for help</h4><p class="small">Your vet and groomer are great partners.</p></div></div><div class="copy"><strong>Mavilo Pet Co.</strong> &middot; Happy pets, practical care<br>&copy; 2026 Mavilo Pet Co. For personal use only. Please do not resell or redistribute this file.</div></section></body></html>
