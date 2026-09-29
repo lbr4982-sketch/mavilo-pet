@@ -1,7 +1,108 @@
 {
   "sections": {
-    "main": { "type": "main-page-contact" },
-    "faq": { "type": "faq" }
+    "main": {
+      "type": "main-page-contact",
+      "settings": {
+        "heading": "Need help with a guide or download?",
+        "text": "Send us a message and include your order number if you have one. We're here to help with download issues, product questions, and order support.",
+        "support_text": "For order questions, include your order number and the email used at checkout. If a file won't open, tell us which device and app you're using."
+      },
+      "blocks": {
+        "i1": {
+          "type": "info",
+          "settings": {
+            "icon": "📦",
+            "title": "Order support",
+            "text": "Have your order number ready so we can look up your purchase faster."
+          }
+        },
+        "i2": {
+          "type": "info",
+          "settings": {
+            "icon": "🐾",
+            "title": "Product questions",
+            "text": "Not sure which guide fits your pet? Ask us and we'll point you to the right one."
+          }
+        },
+        "i3": {
+          "type": "info",
+          "settings": {
+            "icon": "⬇️",
+            "title": "Download help",
+            "text": "Check your confirmation email first (and spam folder), then contact us if the link isn't working."
+          }
+        },
+        "i4": {
+          "type": "info",
+          "settings": {
+            "icon": "💚",
+            "title": "Pet parent care",
+            "text": "We aim to keep support simple, practical, and helpful."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4"
+      ]
+    },
+    "faq": {
+      "type": "faq",
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Helpful answers before you buy",
+        "text": "Everything you need to know about our digital guides."
+      },
+      "blocks": {
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "How do I get my guide?",
+            "answer": "<p>Right after checkout you'll receive an email with your download link. You can also download from the order confirmation page.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "Is anything shipped to me?",
+            "answer": "<p>No. All guides are digital PDF files — nothing physical is shipped, so there are no shipping fees or wait times.</p>"
+          }
+        },
+        "q3": {
+          "type": "question",
+          "settings": {
+            "question": "Can I print the guides?",
+            "answer": "<p>Yes. Every guide is formatted for US Letter paper and prints cleanly on a home printer. You can also use them on a tablet or phone.</p>"
+          }
+        },
+        "q4": {
+          "type": "question",
+          "settings": {
+            "question": "What is your refund policy?",
+            "answer": "<p>Because guides are instantly downloadable, sales are generally final. If your file won't open or something is wrong with it, contact us and we'll fix it or refund you.</p>"
+          }
+        },
+        "q5": {
+          "type": "question",
+          "settings": {
+            "question": "Is this veterinary advice?",
+            "answer": "<p>No. Our guides are general education for pet parents. Always talk to your veterinarian about your pet's specific health needs.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5"
+      ]
+    }
   },
-  "order": ["main", "faq"]
+  "order": [
+    "main",
+    "faq"
+  ]
 }

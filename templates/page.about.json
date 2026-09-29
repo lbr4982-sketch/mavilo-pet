@@ -1,8 +1,112 @@
 {
   "sections": {
-    "main": { "type": "main-page-about" },
-    "trust_badges": { "type": "trust-badges" },
-    "newsletter": { "type": "newsletter" }
+    "main": {
+      "type": "main-page-about",
+      "settings": {
+        "heading": "Printable pet care guides for real everyday routines.",
+        "text": "We help pet parents build calmer, easier routines with step-by-step guides for training, grooming, health tracking, and enrichment.",
+        "button_label": "Shop all guides",
+        "button_link": "/collections/digital-guides",
+        "promise_eyebrow": "What we believe",
+        "promise_heading": "Clear, humane, and actually usable",
+        "promise_text": "Every guide should turn a stressful pet care moment into a simple plan you can follow today."
+      },
+      "blocks": {
+        "v1": {
+          "type": "value",
+          "settings": {
+            "icon": "🐶",
+            "title": "Positive methods",
+            "text": "Reward-based training and low-stress handling, always."
+          }
+        },
+        "v2": {
+          "type": "value",
+          "settings": {
+            "icon": "📄",
+            "title": "Made to be used",
+            "text": "Checklists, trackers, and worksheets — not just reading."
+          }
+        },
+        "v3": {
+          "type": "value",
+          "settings": {
+            "icon": "⚡",
+            "title": "Instant access",
+            "text": "Download immediately, print as many copies as you need at home."
+          }
+        },
+        "v4": {
+          "type": "value",
+          "settings": {
+            "icon": "💚",
+            "title": "No gimmicks",
+            "text": "Straightforward advice, with your veterinarian as the final word on health."
+          }
+        }
+      },
+      "block_order": [
+        "v1",
+        "v2",
+        "v3",
+        "v4"
+      ]
+    },
+    "trust_badges": {
+      "type": "trust-badges",
+      "settings": {
+        "eyebrow": "Shop with confidence",
+        "heading": "Practical pet care, delivered instantly",
+        "text": "Mavilo Pet Co. makes clear, printable guides for pet parents who want simple routines that actually work."
+      },
+      "blocks": {
+        "badge_secure": {
+          "type": "badge",
+          "settings": {
+            "icon": "🔒",
+            "title": "Secure checkout",
+            "text": "Payments handled through Shopify's secure checkout."
+          }
+        },
+        "badge_instant": {
+          "type": "badge",
+          "settings": {
+            "icon": "⚡",
+            "title": "Instant download",
+            "text": "Your PDF arrives by email right after checkout."
+          }
+        },
+        "badge_print": {
+          "type": "badge",
+          "settings": {
+            "icon": "🖨️",
+            "title": "Print or use on tablet",
+            "text": "US Letter pages that print cleanly at home."
+          }
+        },
+        "badge_guarantee": {
+          "type": "badge",
+          "settings": {
+            "icon": "💚",
+            "title": "Happiness guarantee",
+            "text": "Download issue? We'll fix it or refund you."
+          }
+        }
+      },
+      "block_order": [
+        "badge_secure",
+        "badge_instant",
+        "badge_print",
+        "badge_guarantee"
+      ]
+    },
+    "newsletter": {
+      "type": "newsletter"
+    }
   },
-  "order": ["main", "trust_badges", "newsletter"]
+  "order": [
+    "main",
+    "trust_badges",
+    "newsletter"
+  ]
 }

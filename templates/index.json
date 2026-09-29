@@ -3,153 +3,254 @@
     "hero": {
       "type": "hero",
       "settings": {
-        "eyebrow": "Pet wellness made practical",
-        "heading": "Practical wellness for happier pets.",
-        "text": "Clean, groom, relax, and explore with Mavilo Pet Co.",
-        "primary_label": "Shop Cleaning",
-        "primary_link": "/collections/cleaning-1",
-        "secondary_label": "Shop Travel",
-        "secondary_link": "/collections/walk-travel-1"
+        "eyebrow": "Printable pet care guides",
+        "heading": "Expert-style pet care plans, ready in seconds.",
+        "text": "Step-by-step printable guides for training, grooming, health tracking, and enrichment. Instant PDF download — no shipping, no waiting.",
+        "primary_label": "Shop all guides",
+        "primary_link": "/collections/digital-guides",
+        "secondary_label": "Get the bundle",
+        "secondary_link": "/products/complete-pet-parent-bundle"
       }
     },
     "trust_badges": {
       "type": "trust-badges",
       "blocks": {
-        "badge_secure": { "type": "badge", "settings": {
-          "icon": "🔒", "title": "Secure checkout",
-          "text": "Payments handled through Shopify's secure checkout." } },
-        "badge_returns": { "type": "badge", "settings": {
-          "icon": "↩️", "title": "Easy returns",
-          "text": "30-day returns on unused items in original packaging." } },
-        "badge_petfriendly": { "type": "badge", "settings": {
-          "icon": "🐾", "title": "Pet-friendly design",
-          "text": "Products chosen with everyday pet comfort in mind." } },
-        "badge_shipping": { "type": "badge", "settings": {
-          "icon": "🚚", "title": "Fast U.S. shipping where available",
-          "text": "Free U.S. shipping on orders over $50." } }
+        "badge_secure": {
+          "type": "badge",
+          "settings": {
+            "icon": "🔒",
+            "title": "Secure checkout",
+            "text": "Payments handled through Shopify's secure checkout."
+          }
+        },
+        "badge_instant": {
+          "type": "badge",
+          "settings": {
+            "icon": "⚡",
+            "title": "Instant download",
+            "text": "Your PDF arrives by email right after checkout."
+          }
+        },
+        "badge_print": {
+          "type": "badge",
+          "settings": {
+            "icon": "🖨️",
+            "title": "Print or use on tablet",
+            "text": "US Letter pages that print cleanly at home."
+          }
+        },
+        "badge_guarantee": {
+          "type": "badge",
+          "settings": {
+            "icon": "💚",
+            "title": "Happiness guarantee",
+            "text": "Download issue? We'll fix it or refund you."
+          }
+        }
       },
-      "block_order": ["badge_secure", "badge_returns", "badge_petfriendly", "badge_shipping"],
+      "block_order": [
+        "badge_secure",
+        "badge_instant",
+        "badge_print",
+        "badge_guarantee"
+      ],
       "settings": {
         "eyebrow": "Shop with confidence",
-        "heading": "Practical pet essentials, simple buying experience",
-        "text": "Mavilo Pet Co. is built for U.S. pet parents who want useful products without overcomplicated shopping."
+        "heading": "Practical pet care, delivered instantly",
+        "text": "Mavilo Pet Co. makes clear, printable guides for pet parents who want simple routines that actually work."
       }
     },
     "category_tiles": {
       "type": "category-tiles",
       "blocks": {
-        "tile_cleaning": { "type": "tile", "settings": {
-          "title": "Cleaning",
-          "text": "Paw cleaners, fur rollers, and helpers that keep your home cleaner.",
-          "link": "/collections/cleaning-1" } },
-        "tile_grooming": { "type": "tile", "settings": {
-          "title": "Grooming",
-          "text": "Brushes and coat-care tools designed for easy grooming.",
-          "link": "/collections/grooming-1" } },
-        "tile_comfort": { "type": "tile", "settings": {
-          "title": "Comfort",
-          "text": "Beds and mats made for everyday pet comfort.",
-          "link": "/collections/comfort-1" } },
-        "tile_walk_travel": { "type": "tile", "settings": {
-          "title": "Walk & Travel",
-          "text": "Harnesses, bottles, and travel gear for adventures together.",
-          "link": "/collections/walk-travel-1" } }
+        "tile_training": {
+          "type": "tile",
+          "settings": {
+            "title": "Puppy Training",
+            "text": "A 30-day, day-by-day plan for potty, crate, and basic cues.",
+            "link": "/products/puppy-training-plan"
+          }
+        },
+        "tile_starter": {
+          "type": "tile",
+          "settings": {
+            "title": "New Pet Setup",
+            "text": "Checklists for shopping, pet-proofing, and the first month.",
+            "link": "/products/new-pet-starter-checklist"
+          }
+        },
+        "tile_health": {
+          "type": "tile",
+          "settings": {
+            "title": "Health Records",
+            "text": "Printable logs for vaccines, vet visits, meds, and weight.",
+            "link": "/products/pet-health-record-book"
+          }
+        },
+        "tile_grooming": {
+          "type": "tile",
+          "settings": {
+            "title": "Grooming",
+            "text": "Brush, bathe, and trim nails at home without the stress.",
+            "link": "/products/dog-grooming-guide"
+          }
+        },
+        "tile_cats": {
+          "type": "tile",
+          "settings": {
+            "title": "Cat Enrichment",
+            "text": "30 DIY play ideas and a 4-week enrichment calendar.",
+            "link": "/products/cat-enrichment-guide"
+          }
+        }
       },
-      "block_order": ["tile_cleaning", "tile_grooming", "tile_comfort", "tile_walk_travel"],
+      "block_order": [
+        "tile_training",
+        "tile_starter",
+        "tile_health",
+        "tile_grooming",
+        "tile_cats"
+      ],
       "settings": {
-        "eyebrow": "Shop by category",
-        "heading": "Find products by everyday routine"
+        "eyebrow": "Shop by goal",
+        "heading": "Find the guide for your next step"
       }
     },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "eyebrow": "Best sellers",
+        "eyebrow": "Digital guides",
         "heading": "Pet parent favorites",
-        "text": "Start with the everyday helpers our customers reach for most — quick add straight to your cart.",
-        "collection": "best-sellers",
-        "limit": 4
+        "text": "Printable PDF guides you can download and start using today.",
+        "collection": "digital-guides",
+        "limit": 8
       }
     },
     "values": {
       "type": "values",
       "blocks": {
-        "value_daily": { "type": "value", "settings": {
-          "icon": "🐶", "title": "Practical daily pet care",
-          "text": "Every product earns its place in a real routine — no gimmicks." } },
-        "value_safe": { "type": "value", "settings": {
-          "icon": "🌿", "title": "Pet-safe materials",
-          "text": "Chosen with everyday pet comfort and safety in mind." } },
-        "value_clean": { "type": "value", "settings": {
-          "icon": "🧼", "title": "Easy cleaning",
-          "text": "Designed to rinse, wipe, or machine-wash without fuss." } },
-        "value_travel": { "type": "value", "settings": {
-          "icon": "🚗", "title": "Travel-ready design",
-          "text": "Foldable, packable, and made for life on the move." } },
-        "value_shipping": { "type": "value", "settings": {
-          "icon": "📦", "title": "Fast U.S. shipping where available",
-          "text": "Clear tracking and free U.S. shipping on orders over $50." } }
+        "value_daily": {
+          "type": "value",
+          "settings": {
+            "icon": "🐶",
+            "title": "Practical daily routines",
+            "text": "Short, actionable steps — no fluff, no jargon."
+          }
+        },
+        "value_positive": {
+          "type": "value",
+          "settings": {
+            "icon": "🌿",
+            "title": "Positive, humane methods",
+            "text": "Reward-based training and low-stress handling."
+          }
+        },
+        "value_print": {
+          "type": "value",
+          "settings": {
+            "icon": "📄",
+            "title": "Made to print",
+            "text": "Worksheets, trackers, and checklists you'll actually fill in."
+          }
+        },
+        "value_instant": {
+          "type": "value",
+          "settings": {
+            "icon": "⚡",
+            "title": "Instant access",
+            "text": "Download immediately and keep it forever."
+          }
+        }
       },
-      "block_order": ["value_daily", "value_safe", "value_clean", "value_travel", "value_shipping"],
+      "block_order": [
+        "value_daily",
+        "value_positive",
+        "value_print",
+        "value_instant"
+      ],
       "settings": {
         "eyebrow": "Why Mavilo",
-        "heading": "Built around practical pet routines"
+        "heading": "Built around real pet routines"
       }
     },
-    "brand_story": { "type": "brand-story", "settings": {} },
-    "testimonials": {
-      "type": "testimonials",
-      "blocks": {
-        "review_1": { "type": "testimonial", "settings": {
-          "quote": "The paw cleaner lives by our front door now. Muddy walks are so much less stressful.",
-          "author": "Sarah K.", "pet": "Golden retriever parent" } },
-        "review_2": { "type": "testimonial", "settings": {
-          "quote": "Finally a brush my cat tolerates — and the one-click cleanup is genuinely handy.",
-          "author": "Marcus T.", "pet": "Cat and dog parent" } },
-        "review_3": { "type": "testimonial", "settings": {
-          "quote": "We keep the travel mat in the car. It folds flat and shakes clean in seconds.",
-          "author": "Emily R.", "pet": "Rescue dog parent" } }
-      },
-      "block_order": ["review_1", "review_2", "review_3"],
+    "brand_story": {
+      "type": "brand-story",
       "settings": {
-        "eyebrow": "Pet parent notes",
-        "heading": "Made for real-life pet homes"
+        "heading": "Clear plans, calmer pets, confident pet parents.",
+        "text": "<p>Mavilo Pet Co. makes printable guides for the real parts of pet life: potty training, first nights at home, nail trims, vet visits, and bored indoor cats.</p><p>Our focus is simple: clear, humane, step-by-step plans that help pet parents build routines that stick.</p>",
+        "button_label": "Browse all guides",
+        "button_link": "/collections/digital-guides"
       }
     },
     "faq": {
       "type": "faq",
       "settings": {
         "eyebrow": "Questions",
-        "heading": "Helpful answers before you order",
-        "text": "Everything you need to know before placing your first order with Mavilo Pet Co."
+        "heading": "Helpful answers before you buy",
+        "text": "Everything you need to know about our digital guides."
       },
       "blocks": {
-        "q1": { "type": "question", "settings": {
-          "question": "Where do you ship?",
-          "answer": "<p>We ship within the United States. Free shipping is included on all orders over $50.</p>" } },
-        "q2": { "type": "question", "settings": {
-          "question": "How long does delivery take?",
-          "answer": "<p>Orders are processed within 1–3 business days. U.S. delivery typically takes 7–15 business days. You'll receive a tracking email as soon as your order ships.</p>" } },
-        "q3": { "type": "question", "settings": {
-          "question": "What is your return policy?",
-          "answer": "<p>We offer 30-day returns on unused items in original packaging. If anything arrives damaged or incorrect, contact us and we'll make it right with a replacement or refund.</p>" } },
-        "q4": { "type": "question", "settings": {
-          "question": "How do I choose the right size?",
-          "answer": "<p>Size and fit details are listed on each product page. If you're between sizes, we recommend sizing up for your pet's comfort.</p>" } },
-        "q5": { "type": "question", "settings": {
-          "question": "Are your products safe for pets?",
-          "answer": "<p>Yes. Every product is chosen with pet safety in mind, using pet-safe materials suitable for everyday use with dogs and cats.</p>" } }
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "How do I get my guide?",
+            "answer": "<p>Right after checkout you'll receive an email with your download link. You can also download from the order confirmation page.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "Is anything shipped to me?",
+            "answer": "<p>No. All guides are digital PDF files — nothing physical is shipped, so there are no shipping fees or wait times.</p>"
+          }
+        },
+        "q3": {
+          "type": "question",
+          "settings": {
+            "question": "Can I print the guides?",
+            "answer": "<p>Yes. Every guide is formatted for US Letter paper and prints cleanly on a home printer. You can also use them on a tablet or phone.</p>"
+          }
+        },
+        "q4": {
+          "type": "question",
+          "settings": {
+            "question": "What is your refund policy?",
+            "answer": "<p>Because guides are instantly downloadable, sales are generally final. If your file won't open or something is wrong with it, contact us and we'll fix it or refund you.</p>"
+          }
+        },
+        "q5": {
+          "type": "question",
+          "settings": {
+            "question": "Is this veterinary advice?",
+            "answer": "<p>No. Our guides are general education for pet parents. Always talk to your veterinarian about your pet's specific health needs.</p>"
+          }
+        }
       },
-      "block_order": ["q1", "q2", "q3", "q4", "q5"]
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5"
+      ]
     },
     "newsletter": {
       "type": "newsletter",
       "settings": {
         "eyebrow": "Join the pack",
         "heading": "Join the Mavilo pack",
-        "text": "Join the Mavilo pack for pet care tips and exclusive offers."
+        "text": "Get a free 1-page \"First Week with Your Puppy\" checklist, plus pet care tips and exclusive offers."
       }
     }
   },
-  "order": ["hero", "trust_badges", "category_tiles", "featured_collection", "values", "brand_story", "testimonials", "faq", "newsletter"]
+  "order": [
+    "hero",
+    "trust_badges",
+    "category_tiles",
+    "featured_collection",
+    "values",
+    "brand_story",
+    "faq",
+    "newsletter"
+  ]
 }

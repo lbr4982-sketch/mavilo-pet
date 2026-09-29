@@ -6,9 +6,12 @@
       "type": "footer",
       "settings": {
         "shop_menu": "footer-shop",
-        "support_menu": "footer-support"
+        "support_menu": "footer-support",
+        "text": "Printable pet care guides for training, grooming, health tracking, and enrichment."
       }
     }
   },
-  "order": ["footer"]
+  "order": [
+    "footer"
+  ]
 }

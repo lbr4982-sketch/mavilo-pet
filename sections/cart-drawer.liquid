@@ -1,10 +1,10 @@
 <div data-cart-section>
   <h2>{{ 'cart.general.title' | t }}</h2>
   {%- if cart.item_count == 0 -%}
-    <div class="empty-state"><p>{{ 'cart.general.empty' | t }}</p><a class="button" href="{{ routes.all_products_collection_url }}">Shop pet essentials</a></div>
+    <div class="empty-state"><p>{{ 'cart.general.empty' | t }}</p><a class="button" href="{{ routes.all_products_collection_url }}">Shop pet care guides</a></div>
   {%- else -%}
     {%- assign threshold = section.settings.free_shipping_threshold | times: 100 -%}
-    {%- if threshold > 0 -%}
+    {%- if threshold > 0 and cart.requires_shipping -%}
       <div class="shipping-bar">
         {%- if cart.total_price >= threshold -%}
           <p class="shipping-bar__label">🎉 You've unlocked free U.S. shipping!</p>
@@ -37,7 +37,7 @@
       {%- endfor -%}
       <div class="cart-summary">
         <p class="cart-summary__row"><span>{{ 'cart.general.subtotal' | t }}</span><strong>{{ cart.total_price | money }}</strong></p>
-        <p class="muted" style="font-size:.85rem">Shipping and taxes calculated at checkout.</p>
+        <p class="muted" style="font-size:.85rem">{% if cart.requires_shipping %}Shipping and taxes calculated at checkout.{% else %}Instant download after checkout. Taxes calculated at checkout.{% endif %}</p>
         <button class="button button--full" name="checkout" type="submit">{{ 'cart.general.checkout' | t }}</button>
       </div>
     </form>
