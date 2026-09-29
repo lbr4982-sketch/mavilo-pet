@@ -7,21 +7,21 @@
 * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 html, body { margin: 0; padding: 0; }
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #22312c; font-size: 10.5pt; line-height: 1.5; background: #fff; }
+  color: #22312c; font-size: 9.8pt; line-height: 1.42; background: #fff; }
 h1, h2, h3, h4 { color: #2f6f5e; line-height: 1.2; margin: 0 0 .45em; }
-h1 { font-size: 24pt; letter-spacing: -.01em; }
-h2 { font-size: 14.5pt; margin-top: 1.1em; }
-h3 { font-size: 11.5pt; margin-top: .9em; color: #22312c; }
-p { margin: 0 0 .65em; }
-ul, ol { margin: 0 0 .7em; padding-left: 1.3em; }
-li { margin-bottom: .22em; }
+h1 { font-size: 21pt; letter-spacing: -.01em; }
+h2 { font-size: 13pt; margin-top: .85em; }
+h3 { font-size: 10.8pt; margin-top: .7em; color: #22312c; }
+p { margin: 0 0 .5em; }
+ul, ol { margin: 0 0 .55em; padding-left: 1.3em; }
+li { margin-bottom: .15em; }
 strong { color: #1f4f42; }
 .page { page-break-before: always; break-before: page; }
 .kicker { display: inline-flex; align-items: center; gap: 6px; font-size: 8.5pt; font-weight: 700; letter-spacing: .14em;
   text-transform: uppercase; color: #c9772c; margin-bottom: 4px; }
-.sec-head { border-bottom: 3px solid #f2a65a; padding-bottom: 8px; margin-bottom: 14px; position: relative; }
+.sec-head { border-bottom: 3px solid #f2a65a; padding-bottom: 7px; margin-bottom: 11px; position: relative; }
 .sec-head h1 { margin: 0; }
-.sec-head .lead { margin: 6px 0 0; color: #4b5d56; font-size: 11pt; }
+.sec-head .lead { margin: 4px 0 0; color: #4b5d56; font-size: 10.3pt; }
 .keep { break-inside: avoid; page-break-inside: avoid; }
 
 /* Cover */
@@ -57,7 +57,7 @@ strong { color: #1f4f42; }
 .toc li .pg { font-weight: 700; color: #2f6f5e; min-width: 30px; text-align: right; }
 
 /* Callouts */
-.callout { border-radius: 10px; padding: 11px 14px; margin: 10px 0 12px; background: #fffaf3; border-left: 5px solid #f2a65a; break-inside: avoid; }
+.callout { border-radius: 10px; padding: 8px 12px; margin: 8px 0 9px; background: #fffaf3; border-left: 5px solid #f2a65a; break-inside: avoid; }
 .callout.green { border-left-color: #2f6f5e; background: #eef5f2; }
 .callout.blue { border-left-color: #7aa7c7; background: #eef4f9; }
 .callout .ct { font-weight: 800; font-size: 9pt; letter-spacing: .12em; text-transform: uppercase; color: #c9772c; margin-bottom: 3px; }
@@ -68,9 +68,9 @@ strong { color: #1f4f42; }
 .disclaimer b { color: #3f7299; }
 
 /* Grids and cards */
-.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 16px; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 9px 14px; }
 .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px 12px; }
-.card { background: #fffaf3; border: 1px solid #efe1cd; border-radius: 10px; padding: 10px 12px; break-inside: avoid; }
+.card { background: #fffaf3; border: 1px solid #efe1cd; border-radius: 10px; padding: 8px 11px; break-inside: avoid; }
 .card h3, .card h4 { margin-top: 0; }
 .card h4 { font-size: 10.5pt; color: #2f6f5e; margin-bottom: 4px; }
 .card p:last-child, .card ul:last-child { margin-bottom: 0; }
@@ -78,14 +78,14 @@ strong { color: #1f4f42; }
 .pill.g { background: #2f6f5e; color: #fff; }
 .pill.b { background: #7aa7c7; color: #fff; }
 .steps { counter-reset: st; list-style: none; padding: 0; }
-.steps > li { counter-increment: st; position: relative; padding: 2px 0 6px 34px; break-inside: avoid; }
+.steps > li { counter-increment: st; position: relative; padding: 1px 0 4px 32px; break-inside: avoid; }
 .steps > li:before { content: counter(st); position: absolute; left: 0; top: 1px; width: 23px; height: 23px; border-radius: 50%; background: #2f6f5e; color: #fff;
   font-weight: 800; font-size: 9.5pt; text-align: center; line-height: 23px; }
 
 /* Tables */
-table { width: 100%; border-collapse: collapse; margin: 6px 0 12px; font-size: 9.5pt; }
+table { width: 100%; border-collapse: collapse; margin: 5px 0 9px; font-size: 9pt; }
 th { background: #2f6f5e; color: #fff; text-align: left; padding: 6px 7px; font-weight: 700; font-size: 9pt; }
-td { border-bottom: 1px solid #e7dccb; padding: 5px 7px; vertical-align: top; }
+td { border-bottom: 1px solid #e7dccb; padding: 4px 7px; vertical-align: top; }
 tr:nth-child(even) td { background: #fdf6ec; }
 table.form td { height: 30px; border: 1px solid #d9ccb8; background: #fff !important; }
 table.form th { border: 1px solid #2f6f5e; }
@@ -126,7 +126,7 @@ tr { break-inside: avoid; }
   <div class="inside"><h4>What's inside</h4><ul><li>Week-by-week skill plan</li><li>Potty &amp; crate training schedules</li><li>Bite inhibition made simple</li><li>Socialization checklist</li><li>30-day daily plan table</li><li>Troubleshooting FAQ</li><li>Printable progress tracker</li><li>Tips for the whole family</li></ul></div>
   <div class="stripe"></div>
   <div class="foot"><span><b>Mavilo Pet Co.</b> &nbsp;&middot;&nbsp; Happy pets, practical care</span><span>Printable PDF  •  US Letter</span></div>
-</div><section class="page" id="toc"><div class="sec-head"><div class="kicker"><svg width="12" height="12" viewBox="0 0 100 100" style="transform:rotate(0deg);opacity:1.0;" aria-hidden="true"><g fill="#f2a65a"><ellipse cx="50" cy="66" rx="22" ry="19"/><ellipse cx="22" cy="40" rx="9" ry="12" transform="rotate(-20 22 40)"/><ellipse cx="39" cy="23" rx="9" ry="12" transform="rotate(-6 39 23)"/><ellipse cx="61" cy="23" rx="9" ry="12" transform="rotate(6 61 23)"/><ellipse cx="78" cy="40" rx="9" ry="12" transform="rotate(20 78 40)"/></g></svg> Contents</div><h1>Table of Contents</h1></div><ol class="toc"><li><span class="n">01</span><span class="t">Welcome &amp; How This Plan Works<small>The positive-reinforcement approach, marker words and treats</small></span><span class="pg">3</span></li><li><span class="n">02</span><span class="t">Before Day 1: Set Up for Success<small>Supplies, house rules and session basics</small></span><span class="pg">5</span></li><li><span class="n">03</span><span class="t">Week 1: Foundations<small>Name recognition, marker word, handling, routines</small></span><span class="pg">6</span></li><li><span class="n">04</span><span class="t">Week 2: Sit, Down &amp; Gentle Mouths<small>Lure, shape and add cues</small></span><span class="pg">8</span></li><li><span class="n">05</span><span class="t">Week 3: Stay &amp; Come<small>Duration, distance, distraction and recall games</small></span><span class="pg">10</span></li><li><span class="n">06</span><span class="t">Week 4: Leash Walking &amp; Real Life<small>Loose-leash walking and proofing skills</small></span><span class="pg">12</span></li><li><span class="n">07</span><span class="t">Potty Training Schedule<small>Timing, a sample day and accident clean-up</small></span><span class="pg">14</span></li><li><span class="n">08</span><span class="t">Crate Training Step by Step<small>Making the crate a favorite place</small></span><span class="pg">16</span></li><li><span class="n">09</span><span class="t">Bite Inhibition &amp; Nipping<small>Teaching a soft mouth</small></span><span class="pg">18</span></li><li><span class="n">10</span><span class="t">Socialization Checklist<small>People, places, sounds, surfaces and handling</small></span><span class="pg">20</span></li><li><span class="n">11</span><span class="t">The 30-Day Daily Plan<small>One table, every day mapped out</small></span><span class="pg">22</span></li><li><span class="n">12</span><span class="t">Troubleshooting FAQ<small>Answers to the most common puppy problems</small></span><span class="pg">24</span></li><li><span class="n">13</span><span class="t">Printable Progress Tracker<small>Skill charts, potty log and notes</small></span><span class="pg">26</span></li></ol><div class="callout green" style="margin-top:22px"><div class="ct">How to use this PDF</div><p>Read it on screen or print the whole thing. Worksheet pages are designed to be printed again and again, so feel free to print extra copies of any tracker you use often. Tip: print at &ldquo;Actual size&rdquo; on US Letter paper.</p></div></section><section class="page" id="intro"><div class="sec-head"><div class="kicker"><svg width="12" height="12" viewBox="0 0 100 100" style="transform:rotate(0deg);opacity:1.0;" aria-hidden="true"><g fill="#f2a65a"><ellipse cx="50" cy="66" rx="22" ry="19"/><ellipse cx="22" cy="40" rx="9" ry="12" transform="rotate(-20 22 40)"/><ellipse cx="39" cy="23" rx="9" ry="12" transform="rotate(-6 39 23)"/><ellipse cx="61" cy="23" rx="9" ry="12" transform="rotate(6 61 23)"/><ellipse cx="78" cy="40" rx="9" ry="12" transform="rotate(20 78 40)"/></g></svg> Section 1</div><h1>Welcome &amp; How This Plan Works</h1><p class="lead">Congratulations on your new puppy! The next 30 days are a wonderful window to build habits that last a lifetime.</p></div>
+</div><section class="page" id="toc"><div class="sec-head"><div class="kicker"><svg width="12" height="12" viewBox="0 0 100 100" style="transform:rotate(0deg);opacity:1.0;" aria-hidden="true"><g fill="#f2a65a"><ellipse cx="50" cy="66" rx="22" ry="19"/><ellipse cx="22" cy="40" rx="9" ry="12" transform="rotate(-20 22 40)"/><ellipse cx="39" cy="23" rx="9" ry="12" transform="rotate(-6 39 23)"/><ellipse cx="61" cy="23" rx="9" ry="12" transform="rotate(6 61 23)"/><ellipse cx="78" cy="40" rx="9" ry="12" transform="rotate(20 78 40)"/></g></svg> Contents</div><h1>Table of Contents</h1></div><ol class="toc"><li><span class="n">01</span><span class="t">Welcome &amp; How This Plan Works<small>The positive-reinforcement approach, marker words and treats</small></span><span class="pg">3</span></li><li><span class="n">02</span><span class="t">Before Day 1: Set Up for Success<small>Supplies, house rules and session basics</small></span><span class="pg">4</span></li><li><span class="n">03</span><span class="t">Week 1: Foundations<small>Name recognition, marker word, handling, routines</small></span><span class="pg">5</span></li><li><span class="n">04</span><span class="t">Week 2: Sit, Down &amp; Gentle Mouths<small>Lure, shape and add cues</small></span><span class="pg">6</span></li><li><span class="n">05</span><span class="t">Week 3: Stay &amp; Come<small>Duration, distance, distraction and recall games</small></span><span class="pg">7</span></li><li><span class="n">06</span><span class="t">Week 4: Leash Walking &amp; Real Life<small>Loose-leash walking and proofing skills</small></span><span class="pg">8</span></li><li><span class="n">07</span><span class="t">Potty Training Schedule<small>Timing, a sample day and accident clean-up</small></span><span class="pg">9</span></li><li><span class="n">08</span><span class="t">Crate Training Step by Step<small>Making the crate a favorite place</small></span><span class="pg">11</span></li><li><span class="n">09</span><span class="t">Bite Inhibition &amp; Nipping<small>Teaching a soft mouth</small></span><span class="pg">12</span></li><li><span class="n">10</span><span class="t">Socialization Checklist<small>People, places, sounds, surfaces and handling</small></span><span class="pg">13</span></li><li><span class="n">11</span><span class="t">The 30-Day Daily Plan<small>One table, every day mapped out</small></span><span class="pg">15</span></li><li><span class="n">12</span><span class="t">Troubleshooting FAQ<small>Answers to the most common puppy problems</small></span><span class="pg">17</span></li><li><span class="n">13</span><span class="t">Printable Progress Tracker<small>Skill charts, potty log and notes</small></span><span class="pg">18</span></li></ol><div class="callout green" style="margin-top:22px"><div class="ct">How to use this PDF</div><p>Read it on screen or print the whole thing. Worksheet pages are designed to be printed again and again, so feel free to print extra copies of any tracker you use often. Tip: print at &ldquo;Actual size&rdquo; on US Letter paper.</p></div></section><section class="page" id="intro"><div class="sec-head"><div class="kicker"><svg width="12" height="12" viewBox="0 0 100 100" style="transform:rotate(0deg);opacity:1.0;" aria-hidden="true"><g fill="#f2a65a"><ellipse cx="50" cy="66" rx="22" ry="19"/><ellipse cx="22" cy="40" rx="9" ry="12" transform="rotate(-20 22 40)"/><ellipse cx="39" cy="23" rx="9" ry="12" transform="rotate(-6 39 23)"/><ellipse cx="61" cy="23" rx="9" ry="12" transform="rotate(6 61 23)"/><ellipse cx="78" cy="40" rx="9" ry="12" transform="rotate(20 78 40)"/></g></svg> Section 1</div><h1>Welcome &amp; How This Plan Works</h1><p class="lead">Congratulations on your new puppy! The next 30 days are a wonderful window to build habits that last a lifetime.</p></div>
 <p>This plan gives you a clear, day-by-day path through the skills most families want first: responding to their name, sitting, lying down, staying, coming when called, walking nicely on a leash, using the right potty spot, relaxing in a crate, and using a gentle mouth. You only need <strong>three to five short sessions a day of 3&ndash;5 minutes each</strong>, woven into normal life.</p>
 <h2>The positive-reinforcement approach</h2>
 <p>Positive reinforcement means you <strong>add something your puppy likes (a treat, a toy, praise, access to the yard) right after a behavior you want</strong>, so that behavior happens more often. It is the approach recommended by the American Veterinary Society of Animal Behavior because it builds trust and avoids the fear and side effects that can come with harsh corrections.</p>
