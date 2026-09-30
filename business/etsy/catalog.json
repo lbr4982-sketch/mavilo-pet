@@ -1,0 +1,46 @@
+{
+  "shop_name": "Mavilocco",
+  "shop_url": "https://mavilocco.etsy.com",
+  "share_save_shop_url": "https://mavilocco.etsy.com",
+  "opened": "2026-09-29",
+  "offsite_ads": "opted_out",
+  "listings": {
+    "puppy-training-plan": {
+      "listing_id": null,
+      "url": null,
+      "published": "2026-09-30",
+      "share_save_url": null
+    },
+    "pet-health-record-book": {
+      "listing_id": null,
+      "url": null,
+      "published": "2026-09-30",
+      "share_save_url": null
+    },
+    "new-pet-starter-checklist": {
+      "listing_id": null,
+      "url": null,
+      "published": "2026-09-30",
+      "share_save_url": null
+    },
+    "dog-grooming-guide": {
+      "listing_id": null,
+      "url": null,
+      "published": "2026-09-30",
+      "share_save_url": null
+    },
+    "cat-enrichment-guide": {
+      "listing_id": null,
+      "url": null,
+      "published": "2026-09-30",
+      "share_save_url": null
+    },
+    "complete-pet-parent-bundle": {
+      "listing_id": null,
+      "url": null,
+      "published": "2026-09-30",
+      "share_save_url": null
+    }
+  },
+  "note": "listing_id/url: Etsy 상품 페이지 주소를 확인해 채우세요. share_save_url: Share & Save에서 상품별 링크."
+}

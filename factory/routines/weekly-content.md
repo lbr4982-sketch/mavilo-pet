@@ -19,7 +19,7 @@ One PR on branch `content/YYYY-WW` containing:
 3. **Tools.** GitHub + web search only. No commerce/social APIs, no secrets.
 4. **Copy blocks verbatim.** Every post ends with `VET_DISCLAIMER_SHORT` and the line "Written by Mavilo Pet Co. with the help of AI tools and reviewed by a human." Product mentions never promise results or medical outcomes.
 5. **No dosing / vaccine schedules / diagnosis** in posts or email. Seasonal hazard posts (Halloween candy, Thanksgiving foods, holiday plants) list *what* is risky with a primary source URL (ASPCA Poison Control, AVMA, Merck), never *how much*, and always "call your veterinarian or a pet poison hotline". Such a post gets the `needs-human` label.
-6. **Links.** Etsy: `share_save_url` per handle from `business/etsy/catalog.json`; if absent, `https://www.etsy.com/shop/MaviloPetCo` and note "Share & Save 링크 없음" in the PR. Shopify: `https://mavilopet.com/products/<handle>` unless `catalog.json` has `shopify_domain`.
+6. **Links.** Etsy: `share_save_url` per handle from `business/etsy/catalog.json`; if absent, `https://mavilocco.etsy.com` and note "Share & Save 링크 없음" in the PR. Shopify: `https://mavilopet.com/products/<handle>` unless `catalog.json` has `shopify_domain`.
 7. **Refresh proposes only.** The owner applies title/tag swaps by hand on Tuesday. Never deactivate.
 8. Never merge.
 

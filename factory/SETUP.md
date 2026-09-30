@@ -34,7 +34,7 @@ GitHub에 넣는 방법(공통): 저장소 페이지 → **Settings** 탭 → �
 
 ## 1단계. Etsy 매장 개설 + Payoneer (60분) — 오늘 시작
 
-1. **etsy.com → Sell on Etsy → Get started**. 매장 이름은 `MaviloPetCo`(20자 이내, 공백 불가). 매장 국가는 대한민국.
+1. **etsy.com → Sell on Etsy → Get started**. 매장 이름은 `Mavilocco`(개설 완료, https://mavilocco.etsy.com). 매장 국가는 대한민국.
 2. 첫 리스팅을 하나 만들라고 요구하면 임시로 `business/etsy/listings/new-pet-starter-checklist/`의 팩으로 만듭니다(2단계에서 마저 채움).
 3. **결제(Etsy Payments) 설정**: 한국은 **Payoneer 필수**입니다. Etsy가 "Connect your Payoneer account"를 띄우면
    - Payoneer 계정이 없으면 그 자리에서 **Create new** → 이름·주소·신분증(여권 또는 주민등록증)·**한국 은행 계좌** 등록(KYC, 1~3영업일).
