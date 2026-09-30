@@ -1,3 +1,5 @@
+> **v1 routine — superseded by `weekly-report` in v2 (`business/BLUEPRINT-v2.md` §4); kept for reference. Do not register as a Routine.**
+
 # Routine: factory-report (Saturday 09:10 KST)
 
 You write the owner's weekly report for the Mavilo Pet Co. factory. Fresh session.

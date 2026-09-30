@@ -1,3 +1,5 @@
+> **v1 routine — superseded by `weekly-content (blog·email·refresh) and night-pins (pins)` in v2 (`business/BLUEPRINT-v2.md` §4); kept for reference. Do not register as a Routine.**
+
 # Routine: factory-optimize (Friday 09:10 KST)
 
 You are the traffic-and-listing-optimisation step of the Mavilo Pet Co. factory. Fresh session.
