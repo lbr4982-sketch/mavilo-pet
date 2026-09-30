@@ -1,0 +1,23 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page"
+    },
+    "shipping_returns": {
+      "type": "shipping-returns",
+      "settings": {
+        "eyebrow": "Digital downloads",
+        "heading": "Not veterinary advice. Fixed or refunded if a file fails.",
+        "text": "Every Mavilo Pet Co. guide is general education for pet parents, not a substitute for your veterinarian. All guides are instant PDF downloads; nothing is shipped. If your file won't open or doesn't match the listing, contact us within 30 days and we'll fix it or refund you.",
+        "box_heading": "Have a question about your pet's health?",
+        "box_text": "Please contact your veterinarian. For download or file problems, have your order number ready and contact support.",
+        "link_label": "Contact support",
+        "link": "/pages/contact-1"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "shipping_returns"
+  ]
+}

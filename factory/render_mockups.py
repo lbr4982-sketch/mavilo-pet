@@ -550,7 +550,8 @@ def img_bundle_inside() -> str:
 # Drivers
 # --------------------------------------------------------------------------
 def slug(s: str) -> str:
-    return "".join(ch if ch.isalnum() else "-" for ch in s.lower()).strip("-")[:32]
+    import re
+    return re.sub(r"-+", "-", "".join(ch if ch.isalnum() else "-" for ch in s.lower())).strip("-")[:32]
 
 
 def render_product(handle: str, only: set[str] | None, workdir: Path) -> list[Path]:
