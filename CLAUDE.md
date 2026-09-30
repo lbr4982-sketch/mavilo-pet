@@ -34,7 +34,7 @@ There is no Node package manifest or automated unit test suite in this repositor
 
 ## Business content
 
-- `business/` holds non-theme content: product PDFs and their HTML sources (`business/products/`), a Shopify product import CSV, blog posts, and marketing plans. It is excluded from theme uploads via `.shopifyignore`.
+- `business/` holds non-theme content: the operating blueprint (`business/BLUEPRINT.md`, Korean), product PDFs and their HTML sources (`business/products/`), a Shopify product import CSV, blog posts, and marketing plans. It is excluded from theme uploads via `.shopifyignore`.
 
 ## Theme conventions
 
