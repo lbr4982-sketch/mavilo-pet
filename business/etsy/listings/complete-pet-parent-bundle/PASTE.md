@@ -42,7 +42,7 @@ HOW IT WORKS
 MADE WITH CARE
 Mavilo Pet Co. is a small pet-loving shop. Every guide begins with our own outline, structure and design. We use generative AI tools to help draft text and layouts; a person then edits, fact-checks and approves every page before it is sold, so what you download reflects our original direction and human review.
 
-These guides are educational and is not veterinary advice. Always consult your veterinarian or a certified trainer about your own pet.
+These guides are educational and are not veterinary advice. Always consult your veterinarian or a certified trainer about your own pet.
 
 License: personal, non-commercial use in your own household. Please do not resell or share the file. Digital downloads are non-refundable once delivered, but if anything is wrong with your file, message us and we will fix it.
 -----------------------------------------
