@@ -1,0 +1,47 @@
+{% layout none %}{%- comment -%}
+  Pinterest-ready RSS 2.0 feed for any blog.
+  URL to connect in Pinterest (Settings > Bulk create Pins > Auto-publish > RSS feed):
+    https://<your-domain>/blogs/news?view=rss
+  Do NOT use the built-in /blogs/news.atom feed: Pinterest rejects Atom and only reads Pin
+  images from <enclosure> / <media:content> / <image>, which the default feed lacks.
+  Shopify serves alternate templates with a text/html content-type; Pinterest and most
+  readers sniff the <rss> root element and parse it anyway; validate once with https://validator.w3.org/feed/ after connecting.
+  The health workflow checks this URL for HTTP 200 and a valid <rss> root each Saturday.
+{%- endcomment -%}
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>{{ blog.title | escape }} | {{ shop.name | escape }}</title>
+    <link>{{ shop.url }}{{ blog.url }}</link>
+    <atom:link href="{{ shop.url }}{{ blog.url }}?view=rss" rel="self" type="application/rss+xml"/>
+    <description>{{ shop.description | default: blog.title | strip_html | truncate: 300 | escape }}</description>
+    <language>en-us</language>
+    <lastBuildDate>{{ 'now' | date: '%a, %d %b %Y %H:%M:%S %z' }}</lastBuildDate>
+    <generator>Mavilo Pet Co. theme blog.rss.liquid</generator>
+    {%- paginate blog.articles by 50 -%}
+    {%- for article in blog.articles -%}
+    {%- assign article_url = shop.url | append: article.url -%}
+    <item>
+      <title>{{ article.title | escape }}</title>
+      <link>{{ article_url }}</link>
+      <guid isPermaLink="true">{{ article_url }}</guid>
+      <pubDate>{{ article.published_at | date: '%a, %d %b %Y %H:%M:%S %z' }}</pubDate>
+      <dc:creator>{{ article.author | default: shop.name | escape }}</dc:creator>
+      {%- for tag in article.tags -%}
+      <category>{{ tag | escape }}</category>
+      {%- endfor -%}
+      <description>{{ article.excerpt_or_content | strip_html | strip | truncate: 400 | escape }}</description>
+      <content:encoded><![CDATA[{{ article.content }}]]></content:encoded>
+      {%- if article.image -%}
+      {%- assign img = article.image | image_url: width: 1000 -%}
+      <enclosure url="{{ img }}" type="image/jpeg" length="0"/>
+      <media:content url="{{ img }}" medium="image" type="image/jpeg">
+        <media:title type="plain">{{ article.image.alt | default: article.title | escape }}</media:title>
+      </media:content>
+      <media:thumbnail url="{{ article.image | image_url: width: 400 }}"/>
+      {%- endif -%}
+    </item>
+    {%- endfor -%}
+    {%- endpaginate -%}
+  </channel>
+</rss>
