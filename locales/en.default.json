@@ -34,5 +34,10 @@
       "subtotal": "Subtotal",
       "remove": "Remove"
     }
+  },
+  "sections": {
+    "link_list": {
+      "from_pin": "Highlighted because you arrived from a pin or video"
+    }
   }
 }

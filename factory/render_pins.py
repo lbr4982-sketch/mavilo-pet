@@ -280,7 +280,7 @@ def frame_html(handle: str, page_no: int) -> str:
       <span class="pill" style="font-size:22px;">Page {page_no} of {total}</span>
     </div>
     <div style="position:absolute;left:70px;right:70px;top:150px;font-size:30px;font-weight:700;color:{MUTED};">{esc(TITLES[handle])}</div>
-    <img class="page shadow" src="{prev}" style="position:absolute;left:70px;top:220px;width:940px;">
+    <img class="page shadow" src="{prev}" style="position:absolute;left:70px;top:330px;width:940px;">
     {footer()}
     """, FRAME_W, FRAME_H)
 

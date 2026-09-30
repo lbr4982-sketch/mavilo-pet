@@ -1,0 +1,116 @@
+{
+  "sections": {
+    "links": {
+      "type": "link-list",
+      "settings": {
+        "show_logo": true,
+        "heading": "Mavilo Pet Co.",
+        "text": "Printable pet-care guides: instant PDF downloads, nothing shipped. Tap a link below.",
+        "footnote": "Our guides are general education for pet parents, not veterinary advice."
+      },
+      "blocks": {
+        "etsy": {
+          "type": "link",
+          "settings": {
+            "label": "Shop all guides on Etsy",
+            "url": "https://www.etsy.com/shop/MaviloPetCo",
+            "icon": "🛍️",
+            "note": "Instant PDF download",
+            "handle": "",
+            "featured": true
+          }
+        },
+        "bundle": {
+          "type": "link",
+          "settings": {
+            "label": "Complete Pet Parent Bundle",
+            "url": "/products/complete-pet-parent-bundle",
+            "icon": "📚",
+            "note": "All 5 guides, one download",
+            "handle": "complete-pet-parent-bundle",
+            "featured": false
+          }
+        },
+        "puppy": {
+          "type": "link",
+          "settings": {
+            "label": "30-Day Puppy Training Plan",
+            "url": "/products/puppy-training-plan",
+            "icon": "🐶",
+            "note": "One short session a day",
+            "handle": "puppy-training-plan",
+            "featured": false
+          }
+        },
+        "cat": {
+          "type": "link",
+          "settings": {
+            "label": "Indoor Cat Enrichment Guide",
+            "url": "/products/cat-enrichment-guide",
+            "icon": "🐱",
+            "note": "30 DIY ideas + 4-week calendar",
+            "handle": "cat-enrichment-guide",
+            "featured": false
+          }
+        },
+        "starter": {
+          "type": "link",
+          "settings": {
+            "label": "New Pet Starter Checklist Kit",
+            "url": "/products/new-pet-starter-checklist",
+            "icon": "✅",
+            "note": "9 checklists for the first month",
+            "handle": "new-pet-starter-checklist",
+            "featured": false
+          }
+        },
+        "health": {
+          "type": "link",
+          "settings": {
+            "label": "Pet Health & Care Record Book",
+            "url": "/products/pet-health-record-book",
+            "icon": "🩺",
+            "note": "Vaccines, vet visits, meds, weight",
+            "handle": "pet-health-record-book",
+            "featured": false
+          }
+        },
+        "grooming": {
+          "type": "link",
+          "settings": {
+            "label": "At-Home Dog Grooming Guide",
+            "url": "/products/dog-grooming-guide",
+            "icon": "✂️",
+            "note": "Brush, bathe, trim, step by step",
+            "handle": "dog-grooming-guide",
+            "featured": false
+          }
+        },
+        "newsletter": {
+          "type": "link",
+          "settings": {
+            "label": "Free \"First Week with Your Puppy\" checklist",
+            "url": "/#newsletter",
+            "icon": "✉️",
+            "note": "Join the newsletter",
+            "handle": "",
+            "featured": false
+          }
+        },
+        "home": {
+          "type": "link",
+          "settings": {
+            "label": "Shopify store home",
+            "url": "/",
+            "icon": "🏠",
+            "note": "All guides, blog and FAQ",
+            "handle": "",
+            "featured": false
+          }
+        }
+      },
+      "block_order": ["etsy", "bundle", "puppy", "cat", "starter", "health", "grooming", "newsletter", "home"]
+    }
+  },
+  "order": ["links"]
+}
