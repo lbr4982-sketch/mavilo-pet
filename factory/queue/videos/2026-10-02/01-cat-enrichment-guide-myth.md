@@ -47,4 +47,4 @@ Your indoor cat isn't lazy, they're bored. 3 fixes tonight + 30 DIY ideas in our
 - 음악: 보이스오버만(무음) 또는 **각 플랫폼의 상업용 라이브러리**에서 업로드 시점에 고르기(TikTok Commercial Music Library / Instagram 비즈니스 계정 음악 / YouTube 오디오 라이브러리). CapCut에 한 곡을 박아 세 곳에 올리지 않기.
 - 플랫폼 변형: TikTok 원본(워터마크 없이 내보내기) → Reels 같은 파일 → Shorts 같은 파일, 제목 "Indoor Cat Enrichment Ideas: Your Cat Isn't Lazy". 세로 1080×1920, 자막은 하단 UI를 피해 화면 중앙~상단 2/3에.
 - 근거·주의: 건강 주장 없음(행동·놀이 이야기만). "overeat"는 일반 표현이며 진단 아님. 음식 퍼즐은 가이드 5쪽 안전 문구(테이프·스테이플 제거, 감독) 참고. 출처: 가이드 3쪽(AAFP/ISFM 환경 요구 5가지). `factory/COPY.md` 금지어 검사 통과.
-- 결과 보장 표현 금지: "will stop", "cures", "guaranteed" 사용하지 않음(확인).
+- 결과 보장·치료 표현 없음(확인). `factory/COPY.md` 금지어 목록 기준 통과.
