@@ -10,11 +10,11 @@
 
 | ☐ | 번호 | 파일 | 보드 | 형식 |
 |---|---|---|---|---|
-| ☐ | 01 | `01-puppy-training-plan-first-30-days-hook.png` | Dog Training | 훅 |
-| ☐ | 14 | `14-cat-enrichment-guide-not-lazy-hook.png` | Cat Care | 훅 (오늘 영상 1편과 같은 훅) |
-| ☐ | 08 | `08-pet-health-record-book-rabies-certificate-hook.png` | Pet Health | 훅 |
-| ☐ | 05 | `05-new-pet-starter-checklist-nine-checklists.png` | New Pet Essentials | 체크리스트 |
-| ☐ | 11 | `11-dog-grooming-guide-nail-trim-tip.png` | Dog Care | 팁 카드 |
+| ☑ | 01 | `01-puppy-training-plan-first-30-days-hook.png` | Dog Training | 훅 |
+| ☑ | 14 | `14-cat-enrichment-guide-not-lazy-hook.png` | Cat Care | 훅 (오늘 영상 1편과 같은 훅) |
+| ☑ | 08 | `08-pet-health-record-book-rabies-certificate-hook.png` | Pet Health | 훅 |
+| ☑ | 05 | `05-new-pet-starter-checklist-nine-checklists.png` | New Pet Essentials | 체크리스트 |
+| ☑ | 11 | `11-dog-grooming-guide-nail-trim-tip.png` | Dog Care | 팁 카드 |
 | ☐ | 18 | `18-complete-pet-parent-bundle-five-guides-hook.png` | Pet Printables | 훅 |
 | ☐ | 02 | `02-puppy-training-plan-potty-rule-tip.png` | Dog Training | 팁 카드 |
 | ☐ | 16 | `16-cat-enrichment-guide-prey-sequence-tip.png` | Cat Care | 팁 카드 |
@@ -54,6 +54,10 @@ puppy-training-plan 4 · cat-enrichment-guide 4 · new-pet-starter-checklist 3 �
 | worksheet(워크시트) | 4 | |
 | tip(팁 카드) | 3 | |
 | before-after(전후) | 3 | |
+
+## 게시 기록
+
+- 2026-10-13: 01, 14, 08, 05, 11 게시 (5장, 사장님 직접). 첫 Pinterest 게시.
 
 ## 탈락·수정 메모
 
