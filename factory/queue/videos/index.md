@@ -14,3 +14,6 @@
 - 다음 밤 Routine은 이 파일을 읽어 `☐`는 재활용하고 `☑`는 다시 만들지 않습니다.
 - 7일 지난 날짜 폴더는 `weekly-report`가 `factory/queue/_archive/`로 옮깁니다. 아카이브는 편집하지 않습니다.
 - 날짜 폴더 이름은 **올릴 날(KST)**입니다.
+
+## 자동 렌더 (2026-10-15부터)
+영상은 `factory/render_video.py SPEC.json OUT.mp4`로 클라우드에서 바로 만듭니다(CapCut 불필요). SPEC은 각 대본 옆 `*.video.json`. 결과 MP4는 저장소에 넣지 않고 대화로 전달합니다.

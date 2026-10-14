@@ -1,0 +1,48 @@
+{
+  "fps": 30,
+  "slides": [
+    {
+      "pdf": "business/products/cat-enrichment-guide.pdf",
+      "page": 1,
+      "label": "MYTH",
+      "caption": "Your indoor cat isn't lazy. They're bored.",
+      "seconds": 3.5,
+      "zoom": 1.08
+    },
+    {
+      "pdf": "business/products/cat-enrichment-guide.pdf",
+      "page": 4,
+      "label": "FIX 1",
+      "caption": "Play like prey: stalk → chase → pounce → catch.",
+      "seconds": 5,
+      "zoom": 1.1,
+      "shift": 60
+    },
+    {
+      "pdf": "business/products/cat-enrichment-guide.pdf",
+      "page": 5,
+      "label": "FIX 2",
+      "caption": "Make them work for food. 30 DIY ideas inside.",
+      "seconds": 5,
+      "zoom": 1.1,
+      "shift": 60
+    },
+    {
+      "pdf": "business/products/cat-enrichment-guide.pdf",
+      "page": 10,
+      "label": "FIX 3",
+      "caption": "Go vertical. Plus a 4-week play calendar.",
+      "seconds": 5,
+      "zoom": 1.1,
+      "shift": 60
+    },
+    {
+      "pdf": "business/products/cat-enrichment-guide.pdf",
+      "page": 1,
+      "label": "GET THE GUIDE",
+      "caption": "Printable PDF → link in bio",
+      "seconds": 3.5,
+      "zoom": 1.06
+    }
+  ]
+}
