@@ -25,16 +25,16 @@
 |---|---|---|---|---|
 | ☑ | 06 | `06-new-pet-starter-checklist-budget-planner-worksheet.png` | New Pet Essentials | 워크시트 |
 | ☑ | 09 | `09-pet-health-record-book-vaccination-log-worksheet.png` | Pet Health | 워크시트 |
-| ☐ | 13 | `13-dog-grooming-guide-monthly-checklist-worksheet.png` | Dog Care | 워크시트 |
-| ☐ | 17 | `17-cat-enrichment-guide-four-week-calendar-worksheet.png` | Pet Printables | 워크시트 |
-| ☐ | 04 | `04-puppy-training-plan-whats-inside.png` | Pet Printables | 체크리스트 |
+| ☑ | 13 | `13-dog-grooming-guide-monthly-checklist-worksheet.png` | Dog Care | 워크시트 |
+| ☑ | 17 | `17-cat-enrichment-guide-four-week-calendar-worksheet.png` | Pet Printables | 워크시트 |
+| ☑ | 04 | `04-puppy-training-plan-whats-inside.png` | Pet Printables | 체크리스트 |
 
 ## 20:00~21:00 게시 창 2 (미국 아침) — 7장
 
 | ☐ | 번호 | 파일 | 보드 | 형식 |
 |---|---|---|---|---|
-| ☐ | 03 | `03-puppy-training-plan-chaos-to-routine.png` | Dog Training | 전후 |
-| ☐ | 12 | `12-dog-grooming-guide-bath-time-before-after.png` | Dog Care | 전후 |
+| ☑ | 03 | `03-puppy-training-plan-chaos-to-routine.png` | Dog Training | 전후 |
+| ☑ | 12 | `12-dog-grooming-guide-bath-time-before-after.png` | Dog Care | 전후 |
 | ☐ | 20 | `20-complete-pet-parent-bundle-sticky-notes-before-after.png` | Pet Printables | 전후 |
 | ☐ | 07 | `07-new-pet-starter-checklist-what-to-buy-hook.png` | New Pet Essentials | 훅 |
 | ☐ | 10 | `10-pet-health-record-book-eleven-logs.png` | Pet Printables | 체크리스트 |
@@ -59,6 +59,7 @@ puppy-training-plan 4 · cat-enrichment-guide 4 · new-pet-starter-checklist 3 �
 
 - 2026-10-13: 01, 14, 08, 05, 11 게시 (5장, 사장님 직접). 첫 Pinterest 게시.
 - 2026-10-14: 18, 02, 16, 06, 09 게시 (5장). 2일 연속.
+- 2026-10-15: 13, 17, 04, 03, 12 게시 (5장). 3일 연속.
 
 ## 탈락·수정 메모
 
